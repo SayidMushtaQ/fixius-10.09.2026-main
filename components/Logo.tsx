@@ -1,0 +1,64 @@
+"use client";
+
+import React from "react";
+
+interface LogoProps {
+  whiteAccent?: boolean;
+  className?: string;
+}
+
+export default function Logo({ whiteAccent = false, className = "" }: LogoProps) {
+  const accentColor = whiteAccent ? "#FFFFFF" : "#FF7226";
+  const textColor = whiteAccent ? "#FFFFFF" : "#0f172a"; 
+  const darkPartColor = whiteAccent ? "#FFFFFF" : "#0f172a";
+  
+  return (
+    <svg
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      viewBox="0 0 45.4 27"
+      xmlSpace="preserve"
+      className={className}
+    >
+      <g>
+        <g>
+          {/* Gear Icon (Orange Part) */}
+          <path
+            style={{ fill: accentColor, transition: "fill 0.3s ease" }}
+            d="M19.6,14.1v4.2c-0.8-0.5-1.7-1-2.6-1.7c-0.7-0.5-1.4-1.1-2-1.6c0.6-0.5,0.9-1.3,0.7-2
+              c-0.2-0.9-1.1-1.5-2.1-1.4V8.1c0.8,0.1,1.5-0.1,1.9-0.7C16.2,6.7,16,5.4,15,4.6c0.4-0.5,0.9-1,1.5-1.5c0.4-0.3,0.8-0.6,1.1-0.9
+              c0.1,0.1,0.7,0.9,1.7,0.8C20.3,2.9,21,2,21,0.9c0.5,0,1.1,0,1.7,0c0.6,0,1.1,0,1.6,0c-0.1,0.9,0.4,1.7,1.3,2
+              c0.8,0.3,1.7,0,2.2-0.7c0.8,0.8,1.7,1.6,2.5,2.4c-1,1-1,2.4-0.4,3.1c0.6,0.7,1.6,0.5,1.8,0.5c0,0.5,0.1,1,0.1,1.6
+              c0,0.6,0,1.2-0.1,1.7c-0.9,0-1.7,0.6-2,1.4c-0.2,0.8,0,1.6,0.6,2.2c-0.7,0.6-1.4,1.2-2.2,1.8c-0.8,0.6-1.6,1.1-2.3,1.6
+              c0-1.4,0-2.7,0-4.1c2-1.7,2.7-4.5,1.7-6.7c-0.4-0.8-0.9-1.5-1.6-2C23.9,4,21,4.1,19,5.8c-0.6,0.5-1,1.1-1.3,1.8
+              C16.8,9.8,17.5,12.5,19.6,14.1z"
+          />
+          {/* Wrench Icon (Dark Part) - Keeping stick to original dark if needed, but let's see */}
+          <path
+            style={{ fill: whiteAccent ? "#FFFFFF" : "#3B3B3B", transition: "fill 0.3s ease" }}
+            d="M20.7,6.5l-0.1,3.2l2,1.4l2-1.2V6.5c1.3,0.7,2.1,2.1,2.1,3.5c0,1.6-1.1,3-2.6,3.6c0,1.6,0,3.2,0,4.8h-2.7
+              v-4.5c-1.9-0.9-2.9-2.8-2.6-4.6C19.1,7.7,20.4,6.7,20.7,6.5z"
+          />
+        </g>
+        <g>
+          {/* Text: Fixius */}
+          <text
+            x="22.7"
+            y="26"
+            fontSize="10"
+            fontWeight="bold"
+            fontFamily="system-ui, -apple-system, sans-serif"
+            textAnchor="middle"
+            fill={textColor}
+          >
+            Fixius
+          </text>
+        </g>
+      </g>
+    </svg>
+  );
+}

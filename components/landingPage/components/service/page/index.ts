@@ -1,0 +1,8 @@
+export { default as Page1 } from './Step1'
+export { default as Page2 } from './Step2'
+export { default as Page3 } from './Step3'
+export { default as Page4 } from './Step4'
+export { default as Page5 } from './Step5'
+export { default as Page6 } from './Step6'
+export { default as Page7 } from './Step7'
+export { default as Page8 } from './Step8'

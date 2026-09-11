@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+/* ============================================
+   THEME: Design tokens (replaces tailwind.config.js)
+   ============================================ */
+@theme {
+  /* Fonts */
+  --font-inter: var(--font-inter);
+  --font-outfit: var(--font-inter); /* Standardizing on Inter for Stripe-like feel */
+
+  /* Brand Colors */
+  --color-primary: #ff6a18;
+  --color-primary-hover: #e55914;
+  --color-primary-subtle: #fff5f0;
+  --color-orange: #ff6a18;
+
+  /* Golden Standard High-Contrast Palette */
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+
+  /* Global UI Colors */
+  --color-secondary: var(--color-slate-950);
+  --color-secondary-light: var(--color-slate-500);
+  --color-main-background: #f8fafc; /* Subtle off-white like Stripe */
+  --color-heading: var(--color-slate-950);
+
+  /* Multi-layered Shadows (Refined Stripe Standard) */
+  --shadow-soft: 0 1px 3px 0 rgb(0 0 0 / 0.04);
+  --shadow-premium: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05), 0 10px 15px -3px rgb(0 0 0 / 0.02);
+  --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.04), 0 8px 10px -6px rgb(0 0 0 / 0.04);
+  --shadow-hover: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 10px 10px -5px rgb(0 0 0 / 0.02);
+  --shadow-glow: 0 0 20px rgba(255, 106, 24, 0.08);
+
+  /* Border Radius */
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-4xl: 2.5rem;
+
+  /* Transitions */
+  --transition-standard: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-inter font-bold tracking-tight text-slate-950;
+    letter-spacing: -0.02em;
+  }
+  
+  body {
+    @apply font-inter text-slate-500 antialiased selection:bg-primary/10 selection:text-primary;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  button {
+    cursor: pointer;
+  }
+}
+
+@layer utilities {
+  .transition-standard {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* ============================================
+   COMPONENT STYLES
+   ============================================ */
+@layer components {
+  .Container {
+    @apply w-full max-w-7xl px-4 sm:px-6 lg:px-8 mx-auto;
+  }
+
+  /* Minimalist Buttons */
+  .btn-primary {
+    @apply text-white font-semibold py-2.5 px-6 rounded-lg
+           active:scale-[0.98]
+           flex items-center justify-center gap-2 shadow-soft hover:shadow-premium;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--color-primary);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-slate-50 text-secondary border border-slate-200 py-2.5 px-6 rounded-lg
+           flex items-center justify-center gap-2 shadow-soft;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Glassmorphism Classes (Subtle) */
+  .glass-card {
+    @apply bg-white border border-slate-100 rounded-xl shadow-soft;
+  }
+
+  .glass-nav {
+    @apply bg-white/90 backdrop-blur-md border-b border-slate-100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+  }
+
+  /* Modern Inputs (Subtle) */
+  .input-field {
+    @apply w-full bg-slate-50 border border-slate-100 rounded-lg py-3 px-4
+           focus:outline-none focus:bg-white focus:ring-2 focus:ring-primary/5 focus:border-primary
+           text-secondary font-medium placeholder:text-slate-400;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .globalbtn {
+    @apply text-white font-semibold py-2.5 px-6 rounded-lg
+           active:scale-[0.98]
+           flex items-center justify-center gap-2 shadow-soft hover:shadow-premium;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--color-primary);
+  }
+  .globalbtn:hover {
+    background-color: var(--color-primary-hover);
+  }
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/30 hover:bg-primary/50 rounded-full transition-colors;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Top progress bar */
+@keyframes progress-bar {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-progress {
+  animation: progress-bar 2s ease-in-out infinite;
+}
+
+.transition-standard {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ensure Sonner Toasts render above all modal overlays and dialogs */
+[data-sonner-toaster] {
+  z-index: 999999 !important;
+}

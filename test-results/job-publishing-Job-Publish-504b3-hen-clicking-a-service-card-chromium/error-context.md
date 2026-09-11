@@ -1,0 +1,388 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Oficios24 Logo" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Oficios24 Logo" [ref=e5]
+      - navigation [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "Startseite" [ref=e9] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e10]:
+            - link "Auftrag veröffentlichen" [ref=e11] [cursor=pointer]:
+              - /url: /job-veroeffentlichen
+          - listitem [ref=e12]:
+            - link "So funktioniert es" [ref=e13] [cursor=pointer]:
+              - /url: /sofunktioniertes
+          - listitem [ref=e14]:
+            - link "Suche" [ref=e15] [cursor=pointer]:
+              - /url: /handwerker-finden
+        - generic [ref=e17]:
+          - button "Anmelden" [ref=e18]
+          - link "Partner werden" [ref=e19] [cursor=pointer]:
+            - /url: /registrieren
+  - main [ref=e21]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - heading "Finde Handwerker für all deine Heimprojekte" [level=1] [ref=e28]:
+          - text: Finde Handwerker für all deine
+          - generic [ref=e29]:
+            - text: Heimprojekte
+            - img [ref=e30]
+        - generic [ref=e32]:
+          - paragraph [ref=e33]: "Finde schnell und direkt einen Handwerker: Nutze unsere intelligente Suche und erhalte sofort ein kostenloses Angebot."
+          - generic [ref=e35]:
+            - img [ref=e37]
+            - textbox "Was suchen Sie? (z.B. Maler, Elektriker)" [ref=e39]
+            - button "Veröffentlichen" [ref=e40]
+      - generic [ref=e41]:
+        - img "Professional Handworker" [ref=e43]
+        - img "Badge" [ref=e45]
+        - img "Badge" [ref=e47]
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - heading "Unsere Dienstleistungen" [level=2] [ref=e52]
+        - paragraph [ref=e53]: Entdecken Sie unsere Reparaturkategorien und erhalten Sie kostenlose Angebote von qualifizierten Handwerkern in Ihrer Region.
+      - generic [ref=e54]:
+        - generic [ref=e56] [cursor=pointer]:
+          - img "Möbelmontage" [ref=e59]
+          - heading "Möbelmontage" [level=3] [ref=e60]
+          - generic [ref=e62]:
+            - text: Details sehen
+            - generic [ref=e63]: →
+        - generic [ref=e65] [cursor=pointer]:
+          - img "Klimatechniker" [ref=e68]
+          - heading "Klimatechniker" [level=3] [ref=e69]
+          - generic [ref=e71]:
+            - text: Details sehen
+            - generic [ref=e72]: →
+        - generic [ref=e74] [cursor=pointer]:
+          - img "Maurer" [ref=e77]
+          - heading "Maurer" [level=3] [ref=e78]
+          - generic [ref=e80]:
+            - text: Details sehen
+            - generic [ref=e81]: →
+        - generic [ref=e83] [cursor=pointer]:
+          - img "Gebäudereiniger" [ref=e86]
+          - heading "Gebäudereiniger" [level=3] [ref=e87]
+          - generic [ref=e89]:
+            - text: Details sehen
+            - generic [ref=e90]: →
+        - generic [ref=e92] [cursor=pointer]:
+          - img "Architekt" [ref=e95]
+          - heading "Architekt" [level=3] [ref=e96]
+          - generic [ref=e98]:
+            - text: Details sehen
+            - generic [ref=e99]: →
+        - generic [ref=e101] [cursor=pointer]:
+          - img "Schreiner" [ref=e104]
+          - heading "Schreiner" [level=3] [ref=e105]
+          - generic [ref=e107]:
+            - text: Details sehen
+            - generic [ref=e108]: →
+        - generic [ref=e110] [cursor=pointer]:
+          - img "Kaminbauer" [ref=e113]
+          - heading "Kaminbauer" [level=3] [ref=e114]
+          - generic [ref=e116]:
+            - text: Details sehen
+            - generic [ref=e117]: →
+        - generic [ref=e119] [cursor=pointer]:
+          - img "Betonbohrungen & Betonsägen" [ref=e122]
+          - heading "Betonbohrungen & Betonsägen" [level=3] [ref=e123]
+          - generic [ref=e125]:
+            - text: Details sehen
+            - generic [ref=e126]: →
+        - generic [ref=e128] [cursor=pointer]:
+          - img "Klimatechniker" [ref=e131]
+          - heading "Klimatechniker" [level=3] [ref=e132]
+          - generic [ref=e134]:
+            - text: Details sehen
+            - generic [ref=e135]: →
+        - generic [ref=e137] [cursor=pointer]:
+          - img "Autowerkstatt" [ref=e140]
+          - heading "Autowerkstatt" [level=3] [ref=e141]
+          - generic [ref=e143]:
+            - text: Details sehen
+            - generic [ref=e144]: →
+        - generic [ref=e146] [cursor=pointer]:
+          - img "Trockenbauer" [ref=e149]
+          - heading "Trockenbauer" [level=3] [ref=e150]
+          - generic [ref=e152]:
+            - text: Details sehen
+            - generic [ref=e153]: →
+        - generic [ref=e155] [cursor=pointer]:
+          - img "Abbruchunternehmen" [ref=e158]
+          - heading "Abbruchunternehmen" [level=3] [ref=e159]
+          - generic [ref=e161]:
+            - text: Details sehen
+            - generic [ref=e162]: →
+        - generic [ref=e164] [cursor=pointer]:
+          - img "Elektriker" [ref=e167]
+          - heading "Elektriker" [level=3] [ref=e168]
+          - generic [ref=e170]:
+            - text: Details sehen
+            - generic [ref=e171]: →
+        - generic [ref=e173] [cursor=pointer]:
+          - img "Erdarbeiten" [ref=e176]
+          - heading "Erdarbeiten" [level=3] [ref=e177]
+          - generic [ref=e179]:
+            - text: Details sehen
+            - generic [ref=e180]: →
+        - generic [ref=e182] [cursor=pointer]:
+          - img "Zaunbauer" [ref=e185]
+          - heading "Zaunbauer" [level=3] [ref=e186]
+          - generic [ref=e188]:
+            - text: Details sehen
+            - generic [ref=e189]: →
+      - button "Alle Dienstleistungen anzeigen →" [ref=e191]:
+        - text: Alle Dienstleistungen anzeigen
+        - generic [ref=e192]: →
+    - generic [ref=e194]:
+      - generic [ref=e195]:
+        - heading "Verleihen Sie Ihrem Zuhause neuen Glanz" [level=2] [ref=e196]:
+          - text: Verleihen Sie Ihrem Zuhause
+          - text: neuen Glanz
+        - paragraph [ref=e197]: In nur 3 einfachen Schritten zum perfekten Ergebnis. Finden Sie professionelle Unterstützung für Ihr nächstes Projekt.
+      - generic [ref=e198]:
+        - generic [ref=e200]:
+          - generic [ref=e202]: "01"
+          - img "Auftrag erstellen" [ref=e205]
+          - generic [ref=e206]:
+            - heading "Auftrag erstellen" [level=3] [ref=e207]
+            - paragraph [ref=e208]: Erstellen Sie einen Auftrag für Handwerker und bereiten Sie sich auf Angebote vor.
+        - generic [ref=e209]:
+          - generic [ref=e211]: "02"
+          - img "Angebote von Handwerkern erhalten" [ref=e214]
+          - generic [ref=e215]:
+            - heading "Angebote von Handwerkern erhalten" [level=3] [ref=e216]
+            - paragraph [ref=e217]: Erhalten Sie Angebote von erfahrenen Handwerkern.
+        - generic [ref=e218]:
+          - generic [ref=e220]: "03"
+          - img "Handwerker auswählen und Projekt starten" [ref=e223]
+          - generic [ref=e224]:
+            - heading "Handwerker auswählen und Projekt starten" [level=3] [ref=e225]
+            - paragraph [ref=e226]: Wählen Sie den passenden Handwerker aus und starten Sie Ihr Projekt.
+      - generic [ref=e228]:
+        - generic [ref=e229]: Bereit zu starten?
+        - button "Jetzt Auftrag erstellen" [ref=e230]
+    - generic [ref=e232]:
+      - generic [ref=e233]:
+        - generic [ref=e234]:
+          - heading "Aktuelle Aufträge" [level=2] [ref=e235]
+          - paragraph [ref=e236]: Projekte in Ihrer Nähe, die auf den richtigen Handwerker warten. Melden Sie sich an, um Angebote zu erstellen.
+        - link "Alle Aufträge sehen →" [ref=e237] [cursor=pointer]:
+          - /url: /registrieren
+          - button "Alle Aufträge sehen →" [ref=e238]:
+            - text: Alle Aufträge sehen
+            - generic [ref=e239]: →
+      - generic [ref=e240]:
+        - generic [ref=e242] [cursor=pointer]:
+          - generic [ref=e243]:
+            - img "Maler & Lackierer" [ref=e244]
+            - generic [ref=e245]: Maler & Lackierer
+          - generic [ref=e246]:
+            - generic [ref=e247]:
+              - heading "Wohnzimmer streichen" [level=3] [ref=e248]
+              - generic [ref=e249]:
+                - generic [ref=e250]:
+                  - img [ref=e251]
+                  - text: Berlin, 10115
+                - generic [ref=e254]:
+                  - img [ref=e255]
+                  - text: 45 m²
+                - generic [ref=e257]:
+                  - img [ref=e258]
+                  - text: Gerade eben
+            - generic [ref=e260]:
+              - generic [ref=e265]: +12 Angebote
+              - button "Details →" [ref=e266]:
+                - text: Details
+                - generic [ref=e267]: →
+        - generic [ref=e269] [cursor=pointer]:
+          - generic [ref=e270]:
+            - img "Elektriker" [ref=e271]
+            - generic [ref=e272]: Elektriker
+          - generic [ref=e273]:
+            - generic [ref=e274]:
+              - heading "Neuinstallation Beleuchtung" [level=3] [ref=e275]
+              - generic [ref=e276]:
+                - generic [ref=e277]:
+                  - img [ref=e278]
+                  - text: Hamburg, 20457
+                - generic [ref=e281]:
+                  - img [ref=e282]
+                  - text: 120 m²
+                - generic [ref=e284]:
+                  - img [ref=e285]
+                  - text: Gerade eben
+            - generic [ref=e287]:
+              - generic [ref=e292]: +12 Angebote
+              - button "Details →" [ref=e293]:
+                - text: Details
+                - generic [ref=e294]: →
+        - generic [ref=e296] [cursor=pointer]:
+          - generic [ref=e297]:
+            - img "Bodenleger" [ref=e298]
+            - generic [ref=e299]: Bodenleger
+          - generic [ref=e300]:
+            - generic [ref=e301]:
+              - heading "Parkett verlegen" [level=3] [ref=e302]
+              - generic [ref=e303]:
+                - generic [ref=e304]:
+                  - img [ref=e305]
+                  - text: München, 80331
+                - generic [ref=e308]:
+                  - img [ref=e309]
+                  - text: 85 m²
+                - generic [ref=e311]:
+                  - img [ref=e312]
+                  - text: Gerade eben
+            - generic [ref=e314]:
+              - generic [ref=e319]: +12 Angebote
+              - button "Details →" [ref=e320]:
+                - text: Details
+                - generic [ref=e321]: →
+      - generic [ref=e326]: "Live-Feed: 14 neue Aufträge in der letzten Stunde"
+    - generic [ref=e329]:
+      - generic [ref=e330]:
+        - heading "Unsere bestbewerteten Handwerker" [level=2] [ref=e331]
+        - paragraph [ref=e332]: Vertrauen Sie auf geprüfte Qualität von den erfahrensten Profis in unserem Netzwerk.
+      - generic [ref=e333]:
+        - generic [ref=e334]:
+          - img "Luca" [ref=e336]
+          - generic [ref=e338]:
+            - heading "Luca" [level=3] [ref=e339]
+            - paragraph [ref=e340]: Maler
+            - generic [ref=e341]:
+              - img [ref=e342]
+              - img [ref=e344]
+              - img [ref=e346]
+              - img [ref=e348]
+              - img [ref=e350]
+              - generic [ref=e352]: "5.0"
+        - generic [ref=e353]:
+          - img "Erik" [ref=e355]
+          - generic [ref=e357]:
+            - heading "Erik" [level=3] [ref=e358]
+            - paragraph [ref=e359]: Elektriker
+            - generic [ref=e360]:
+              - img [ref=e361]
+              - img [ref=e363]
+              - img [ref=e365]
+              - img [ref=e367]
+              - img [ref=e369]
+              - generic [ref=e371]: "5.0"
+        - generic [ref=e372]:
+          - img "Emilia" [ref=e374]
+          - generic [ref=e376]:
+            - heading "Emilia" [level=3] [ref=e377]
+            - paragraph [ref=e378]: Fliesenleger
+            - generic [ref=e379]:
+              - img [ref=e380]
+              - img [ref=e382]
+              - img [ref=e384]
+              - img [ref=e386]
+              - img [ref=e388]
+              - generic [ref=e390]: "5.0"
+        - generic [ref=e391]:
+          - img "Matteo" [ref=e393]
+          - generic [ref=e395]:
+            - heading "Matteo" [level=3] [ref=e396]
+            - paragraph [ref=e397]: Außenplaner
+            - generic [ref=e398]:
+              - img [ref=e399]
+              - img [ref=e401]
+              - img [ref=e403]
+              - img [ref=e405]
+              - img [ref=e407]
+              - generic [ref=e409]: "5.0"
+      - generic [ref=e410]:
+        - paragraph [ref=e411]: Über 1,200+ verifizierte Profis in ganz Deutschland
+        - generic [ref=e419]: +1k
+    - generic [ref=e423]:
+      - generic [ref=e424]:
+        - heading "Jetzt registrieren, erreichen Sie lokale Kunden!" [level=2] [ref=e425]:
+          - text: Jetzt registrieren,
+          - text: erreichen Sie lokale Kunden!
+        - paragraph [ref=e426]: Registrieren Sie Ihr Unternehmen jetzt und erreichen Sie sofort Kundinnen und Kunden in Ihrer Umgebung. Präsentieren Sie Ihre Dienstleistungen als erfahrener Profi in den Bereichen Maurerarbeiten, Malerei, Verputzen, Bau, Renovierung usw. Registrieren Sie sich noch heute und werben Sie erfolgreich für Ihr Geschäft.
+        - generic [ref=e427]:
+          - link "Jetzt kostenlos registrieren" [ref=e428] [cursor=pointer]:
+            - /url: /registrieren
+          - link "Mehr erfahren" [ref=e429] [cursor=pointer]:
+            - /url: /kontakt
+      - img "Register Now" [ref=e432]
+  - contentinfo [ref=e435]:
+    - generic [ref=e437]:
+      - generic [ref=e438]:
+        - generic [ref=e439]:
+          - link "Oficios24 Logo" [ref=e440] [cursor=pointer]:
+            - /url: /
+            - img "Oficios24 Logo" [ref=e441]
+          - paragraph [ref=e442]: Suchen Sie einen speziellen Service für Ihr Zuhause? Unsere Plattform verbindet Sie mit erfahrenen Handwerkern für jedes Projekt.
+          - generic [ref=e443]:
+            - link [ref=e444] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e445]
+            - link [ref=e447] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e448]
+            - link [ref=e450] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e451]
+            - link [ref=e453] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e454]
+        - generic [ref=e456]:
+          - heading "Rechtliches" [level=3] [ref=e457]
+          - list [ref=e458]:
+            - listitem [ref=e459]:
+              - link "Impressum" [ref=e460] [cursor=pointer]:
+                - /url: /pie/rechtlicher-hinweis
+            - listitem [ref=e461]:
+              - link "Datenschutzrichtlinie" [ref=e462] [cursor=pointer]:
+                - /url: /pie/datenschutzrichtlinie
+        - generic [ref=e463]:
+          - heading "Bedingungen" [level=3] [ref=e464]
+          - list [ref=e465]:
+            - listitem [ref=e466]:
+              - link "Nutzungsbedingungen" [ref=e467] [cursor=pointer]:
+                - /url: /pie/nutzungsbedingungen
+            - listitem [ref=e468]:
+              - link "Cookie-Richtlinie" [ref=e469] [cursor=pointer]:
+                - /url: /pie/cookie-richtlinie
+        - generic [ref=e470]:
+          - heading "Partner werden" [level=3] [ref=e471]
+          - paragraph [ref=e472]: Erreichen Sie neue Kunden in Ihrer Region und steigern Sie Ihren Umsatz.
+          - link "Jetzt registrieren" [ref=e473] [cursor=pointer]:
+            - /url: /registrieren
+      - generic [ref=e474]:
+        - paragraph [ref=e475]: © 2025 Oficios24. Alle Rechte vorbehalten. Premium Handwerker-Netzwerk.
+        - generic [ref=e476]:
+          - link "FAQ" [ref=e477] [cursor=pointer]:
+            - /url: /faq
+          - link "Kontakt" [ref=e478] [cursor=pointer]:
+            - /url: /kontakt
+          - link "Sitemap" [ref=e479] [cursor=pointer]:
+            - /url: /sitemap
+  - region "Notifications alt+T"
+  - generic [ref=e482]:
+    - paragraph [ref=e484]:
+      - text: Wir verwenden Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Durch Klicken auf 'Akzeptieren' stimmen Sie der Verwendung von Cookies zu. Lesen Sie unsere
+      - link "Cookie-Richtlinie" [ref=e485] [cursor=pointer]:
+        - /url: https://www.oficios24.es/pie/politica-de-cookies
+      - text: .
+    - generic [ref=e486]:
+      - button "Cookies ablehnen" [ref=e487]: Ablehnen
+      - button "Cookies akzeptieren" [ref=e488]: Akzeptieren
+  - generic [ref=e489]:
+    - img [ref=e491]
+    - button "Open Tanstack query devtools" [ref=e539] [cursor=pointer]:
+      - img [ref=e540]
+  - button "Open Next.js Dev Tools" [ref=e593] [cursor=pointer]:
+    - img [ref=e594]
+  - alert [ref=e597]
+```

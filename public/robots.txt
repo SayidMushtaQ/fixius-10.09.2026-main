@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.fixius.de/
+
+# Sitemaps
+Sitemap: https://www.fixius.de/sitemap.xml

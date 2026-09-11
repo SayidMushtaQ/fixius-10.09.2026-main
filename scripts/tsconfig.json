@@ -1,0 +1,17 @@
+{
+  // Dedicated config so ts-node can run the sitemap generator (a standalone
+  // Node script) even though the app's root tsconfig targets ESM/bundler.
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "isolatedModules": false,
+    "noEmit": false
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true
+  },
+  "include": ["generate-sitemaps.ts"]
+}
