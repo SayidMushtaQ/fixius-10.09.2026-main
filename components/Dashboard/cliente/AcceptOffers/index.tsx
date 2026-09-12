@@ -42,7 +42,7 @@ export default function Índice() {
           <NotFoundData text="Keine Angebote erhalten. Bitte versuchen Sie es später erneut." />
         )}
         {hasNextPage && isFetching && (
-          <div className="bg-white h-[40rem] rounded-md shadow-md">
+          <div className="bg-white h-160 rounded-md shadow-md">
             <Loader />
           </div>
         )}

@@ -6,7 +6,7 @@ export default function Craftsman() {
   return (
     <section className="py-24 bg-white relative overflow-hidden">
        {/* Background accent - subtle sky blue glow */}
-      <div className="absolute -bottom-24 -right-24 w-[600px] h-[600px] bg-accent-cyan/5 rounded-full blur-[120px] -z-10" />
+      <div className="absolute -bottom-24 -right-24 w-150 h-150 bg-accent-cyan/5 rounded-full blur-[120px] -z-10" />
 
       <div className="Container">
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
