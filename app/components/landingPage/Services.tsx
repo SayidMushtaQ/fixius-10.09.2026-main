@@ -37,7 +37,7 @@ export default function Services() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 5,
-    rows: 3,
+    rows: 2,
     arrows: false,
     variableWidth: false,
     responsive: [

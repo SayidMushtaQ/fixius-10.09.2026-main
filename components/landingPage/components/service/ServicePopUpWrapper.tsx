@@ -403,7 +403,7 @@ export default function Service({
           <div className="text-right flex flex-col items-end">
             <div className="flex items-baseline gap-1">
               <span className="text-2xl font-bold text-primary leading-none font-inter">{Math.round(progress)}%</span>
-              <span className="text-[10px] font-bold text-slate-300 uppercase">done</span>
+              <span className="text-[10px] font-bold text-slate-300 uppercase">Fertig</span>
             </div>
           </div>
         </div>

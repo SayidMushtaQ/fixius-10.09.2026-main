@@ -99,9 +99,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-xs font-medium">
           <p className="font-inter">
-            © 2025 Fixius. Alle Rechte vorbehalten. 
-            <span className="hidden sm:inline mx-2 text-slate-700">|</span> 
-            <span>Premium Handwerker-Plattform.</span>
+            2025 Fixius - Handwerksportal. Alle Rechte vorbehalten.
           </p>
           <div className="font-inter flex gap-6">
             <Link href="/faq" className="hover:text-primary transition-colors">

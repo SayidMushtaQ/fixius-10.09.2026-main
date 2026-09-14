@@ -40,20 +40,20 @@ export default function ContactPage() {
       <div className="Container px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               className="text-3xl md:text-4xl font-black text-secondary mb-4"
             >
               Kontaktieren Sie <span className="text-primary italic">uns</span>
             </motion.h1>
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
               className="text-slate-500 text-lg max-w-2xl mx-auto font-medium"
             >
-              Haben Sie Fragen oder benötigen Sie Hilfe? Unser Team ist für Sie da. 
+              Haben Sie Fragen oder benötigen Sie Hilfe? Unser Team ist für Sie da.
               Senden Sie uns eine Nachricht und wir melden uns so schnell wie möglich bei Ihnen.
             </motion.p>
           </div>
@@ -61,7 +61,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Contact Info */}
             <div className="lg:col-span-1 space-y-6">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
@@ -92,8 +92,12 @@ export default function ContactPage() {
                     <MapPin size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-secondary">Standort</h3>
-                    <p className="text-slate-500 text-sm font-medium leading-relaxed">Giuseppe Licopoli<br />Neuenkamperstr 32,<br />42657 Solingen</p>
+                    <h3 className="font-bold text-secondary">Standort Fixius - Handwerksportal</h3>
+                    <p className="text-slate-500 text-sm font-medium leading-relaxed">
+                      Giuseppe Licopoli<br />
+                      Neuenkamperstr 32,<br />
+                      42657 Solingen
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -101,7 +105,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}

@@ -28,7 +28,7 @@ export function CategoryCard({ icon, title, href, onClick, className }: Category
           className="w-10 h-auto transition-all duration-300 group-hover:scale-110 opacity-90 group-hover:opacity-100 grayscale group-hover:grayscale-0"
         />
       </div>
-      <span className="text-center text-xs sm:text-sm font-medium text-slate-900 transition-colors group-hover:text-primary leading-tight line-clamp-2 min-h-10 flex items-center justify-center break-words hyphens-auto [overflow-wrap:anywhere] px-1">
+      <span className="text-center text-xs sm:text-sm font-medium text-slate-900 transition-colors group-hover:text-primary leading-tight line-clamp-2 min-h-10 flex items-center justify-center hyphens-auto wrap-anywhere px-1">
         {title}
       </span>
     </>
