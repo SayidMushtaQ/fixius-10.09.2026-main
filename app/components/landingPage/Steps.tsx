@@ -21,7 +21,7 @@ export default function Steps({ isShowHeadingText = true }: { isShowHeadingText?
               delay={0.1}
               className="font-inter text-secondary-light text-lg font-medium"
             >
-              In nur drei einfachen Schritten zum perfekten Handwerker für Ihr Projekt.
+              In nur drei Schritten zum passenden Handwerker für Ihr Projekt.
             </Reveal>
           </div>
         )}
@@ -38,7 +38,7 @@ export default function Steps({ isShowHeadingText = true }: { isShowHeadingText?
                 <div className="absolute top-0 right-0 w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center font-inter font-bold text-lg shadow-soft z-20">
                   {step.step}
                 </div>
-                
+
                 {/* Image Container */}
                 <div className="w-full h-full p-8 bg-slate-50 rounded-2xl border border-slate-100 group-hover:bg-white group-hover:shadow-premium transition-all duration-300">
                   <Image

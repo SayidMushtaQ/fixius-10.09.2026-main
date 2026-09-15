@@ -104,7 +104,7 @@ export default function Services({
           Finden Sie den passenden <span className="text-primary italic">Handwerker</span> für Ihr Projekt
         </h1>
         <p className="font-inter text-secondary-light text-base md:text-lg font-medium">
-          Wählen Sie einfach eine Kategorie aus, um Angebote von geprüften Fachbetrieben zu erhalten.
+          Wählen Sie einfach eine Kategorie aus, um Angebote von geprüften Anbietern zu erhalten.
         </p>
       </section>
       <div className="relative">
@@ -136,14 +136,14 @@ export default function Services({
       </div>
       {servicePopUp && (
         <div className="fixed inset-0 z-9999 flex items-center justify-center p-4">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setServicePopUP(false)}
             className="absolute inset-0 bg-secondary/60 backdrop-blur-md"
           />
-          <motion.div 
+          <motion.div
             initial={{ scale: 0.9, opacity: 0, y: 20 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: 20 }}
@@ -178,7 +178,7 @@ export default function Services({
                     types={["(regions)"]}
                   />
                 </div>
-                
+
                 {city && (
                   <div className="absolute right-4 top-1/2 -translate-y-1/2 bg-primary/10 text-primary px-3 py-1 rounded-lg text-xs font-bold z-10">
                     {city}
@@ -187,7 +187,7 @@ export default function Services({
               </div>
 
               {zip_codeError && (
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   className="flex items-center gap-2 text-red-500 font-bold text-xs"

@@ -106,16 +106,17 @@ export default function HeroSearchAndText({
         <motion.h1
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          className={`font-inter font-bold tracking-tight mb-6 ${
-            homePageOrNot
-              ? "text-4xl md:text-6xl text-left"
-              : "text-3xl md:text-4xl text-center"
-          } text-secondary leading-tight`}
+          className={`font-inter font-bold tracking-tight mb-6 ${homePageOrNot
+            ? "text-4xl md:text-6xl text-left"
+            : "text-3xl md:text-4xl text-center"
+            } text-secondary leading-tight`}
         >
-          Finde Handwerker für all deine <br />
+
+          Finden Sie Handwerker für Ihr <br />
           <span className="text-primary italic relative inline-block mt-1">
-            Heimprojekte
+            Projekt.
           </span>
+
         </motion.h1>
       )}
 
@@ -179,7 +180,7 @@ export default function HeroSearchAndText({
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
-                className="absolute left-0 right-0 top-full mt-2 bg-white border border-slate-200 shadow-hover rounded-2xl z-50 overflow-hidden max-h-[400px] overflow-y-auto"
+                className="absolute left-0 right-0 top-full mt-2 bg-white border border-slate-200 shadow-hover rounded-2xl z-50 overflow-hidden max-h-100 overflow-y-auto"
               >
                 <div className="p-2">
                   <div className="px-3 py-2 mb-1 text-[10px] font-bold text-slate-400 uppercase tracking-widest">

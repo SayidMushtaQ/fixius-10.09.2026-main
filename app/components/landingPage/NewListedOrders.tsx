@@ -26,18 +26,17 @@ export default function NewListedOrders() {
       <div className="Container">
         <div className="flex flex-col md:flex-row items-end justify-between mb-16 gap-8">
           <div className="space-y-4 max-w-2xl text-left">
-             <motion.h2 
-               initial={{ opacity: 0, x: -15 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
-               className="text-3xl md:text-4xl font-inter font-bold text-secondary tracking-tight leading-tight"
-             >
-               Aktuelle <span className="text-primary italic">Aufträge</span>
-             </motion.h2>
-             <p className="font-inter text-secondary-light text-lg font-medium leading-relaxed">
-                Projekte in Ihrer Nähe, die auf den richtigen Handwerker warten. 
-                Melden Sie sich an, um Angebote zu erstellen.
-             </p>
+            <motion.h2
+              initial={{ opacity: 0, x: -15 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="text-3xl md:text-4xl font-inter font-bold text-secondary tracking-tight leading-tight"
+            >
+              Aktuelle <span className="text-primary italic">Aufträge</span>
+            </motion.h2>
+            <p className="font-inter text-secondary-light text-lg font-medium leading-relaxed">
+              Sie sind Handwerker und suchen Projekte in Ihrer Nähe? Melden Sie sich an, um passende Aufträge zu finden.
+            </p>
           </div>
           {canSeeAllJobs ? (
             <Link

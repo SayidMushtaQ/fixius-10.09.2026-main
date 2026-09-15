@@ -39,9 +39,6 @@ export default function Find_handymanPage() {
           width={800}
           height={800}
         />
-        <h1 className="text-4xl font-bold mt-4">
-          Finde einen <span className="text-orange">Handwerker</span>
-        </h1>
       </div>
       <div className="Container my-10">
         <Services

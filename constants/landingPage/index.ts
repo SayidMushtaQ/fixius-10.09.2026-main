@@ -341,14 +341,14 @@ const StepsCardsData = [
     img: "/Schritte/Schritt1.svg",
     title: "Auftrag erstellen",
     paragraph:
-      "Erstellen Sie einen Auftrag für Handwerker und bereiten Sie sich auf Angebote vor.",
+      "Erstellen Sie einen Auftrag und erhalten Sie kostenlose Angebote.",
   },
   {
     id: 2,
     step: 2,
     img: "/Schritte/Schritt2.svg",
     title: "Angebote von Handwerkern erhalten",
-    paragraph: "Erhalten Sie Angebote von erfahrenen Handwerkern.",
+    paragraph: "Erhalten Sie Angebote von passenden Anbietern.",
   },
   {
     id: 3,
@@ -363,7 +363,7 @@ const RegisterNow = {
   id: 1,
   title: "Jetzt registrieren, erreichen Sie lokale Kunden!",
   paragraph:
-    "Registrieren Sie Ihr Unternehmen jetzt und erreichen Sie sofort Kundinnen und Kunden in Ihrer Umgebung. Präsentieren Sie Ihre Dienstleistungen als erfahrener Profi in den Bereichen Maurerarbeiten, Malerei, Verputzen, Bau, Renovierung usw. Registrieren Sie sich noch heute und werben Sie erfolgreich für Ihr Geschäft.",
+    "Registrieren Sie Ihr Unternehmen jetzt und erreichen Sie Kundschaft in Ihrer Umgebung. Präsentieren Sie Ihre Dienstleistungen als erfahrener Profi in den Bereichen Maurerarbeiten, Malerei, Verputzen, Bau, Renovierung usw. Registrieren Sie sich noch heute und werben Sie erfolgreich für Ihr Geschäft.",
 };
 
 export {
