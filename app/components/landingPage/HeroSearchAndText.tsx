@@ -129,7 +129,7 @@ export default function HeroSearchAndText({
         <p
           className={`font-inter text-secondary text-base md:text-lg font-normal leading-relaxed ${homePageOrNot ? "text-left max-w-lg" : "text-center mx-auto"}`}
         >
-          Finde qualifizierte Handwerker und Experten für dein Projekt.
+          Nutzen Sie unsere Suchleiste, finden Sie passende Anbieter und erhalten Sie kostenlose Angebote.
         </p>
 
         <div className="relative group">

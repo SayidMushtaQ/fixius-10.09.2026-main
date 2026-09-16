@@ -56,7 +56,7 @@ export default function Services() {
 						Auswahl von Dienstleistungen nach Ihren Wünschen:
 						<br />
 						<span className="text-orange text-center">
-							Entdecken Sie unsere Reparaturkategorien und erhalten Sie kostenlose Angebote von Handwerkern
+							Entdecken Sie unsere Handwerksbereiche und vergleichen Sie kostenlose Angebote.
 						</span>
 					</h2>
 				</div>
