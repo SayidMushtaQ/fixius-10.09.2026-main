@@ -76,14 +76,14 @@ export default function Services() {
     <section className="pt-20 pb-12 bg-main-background overflow-hidden">
       <div className="Container">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          {/* <div className="max-w-3xl space-y-4">
-            <h2 className="text-3xl md:text-4xl font-inter font-bold text-secondary leading-tight tracking-tight">
+          <div className="max-w-3xl space-y-4">
+            {/* <h2 className="text-3xl md:text-4xl font-inter font-bold text-secondary leading-tight tracking-tight">
               Finden Sie den passenden <span className="text-primary italic">Handwerker</span> für Ihr Projekt
-            </h2>
+            </h2> */}
             <p className="font-inter text-secondary-light text-lg font-medium">
               Wählen Sie einfach eine Kategorie aus, um kostenlose Angebote von geprüften Betrieben in Ihrer Nähe zu erhalten
             </p>
-          </div> */}
+          </div>
         </div>
 
         <div className="relative group/slider">
