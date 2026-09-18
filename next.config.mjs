@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: false,
+
   images: {
+    unoptimized: true,
+
     remotePatterns: [
       {
         protocol: "https",
@@ -18,8 +22,7 @@ const nextConfig = {
       },
     ],
   },
-  // Canonical host: send the apex domain to the www subdomain (SEO canonical).
-  // Requires the reverse proxy to forward the original `Host` header.
+
   async redirects() {
     return [
       {
@@ -30,7 +33,7 @@ const nextConfig = {
       },
     ];
   },
-  // Proxy/Rewrites — replaces middleware for URL rewriting
+
   async rewrites() {
     return [
       {
