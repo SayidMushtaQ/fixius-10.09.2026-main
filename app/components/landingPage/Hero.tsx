@@ -64,6 +64,7 @@ export default function Hero() {
                   width={400}
                   height={500}
                   priority
+                  unoptimized
                 />
               </motion.div>
 
@@ -84,6 +85,7 @@ export default function Hero() {
                     alt="Electrician"
                     width={400}
                     height={500}
+                    unoptimized
                   />
                 </div>
               </motion.div>
