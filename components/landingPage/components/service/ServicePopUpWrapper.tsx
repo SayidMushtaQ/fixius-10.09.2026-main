@@ -39,7 +39,7 @@ export default function Service({
   const handleError = clientError();
   const { userData } = useAuth();
   const contacts = { ...userData[0] };
-
+  console.log(userData, "userData");
   const [titleError, handleTitleError] = useState<string>("");
   const [step2Error, setStep2Error] = useState<string>("");
   const [textAreaPageData, setTextAreaPageData] = useState<string>(""); 
