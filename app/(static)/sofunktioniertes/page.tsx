@@ -55,7 +55,7 @@ export default function SoFunktioniertesPage() {
         <div className="Container text-center max-w-7xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-6xl font-black text-secondary leading-tight">So einfach <span className="text-primary italic">funktioniert es</span></h1>
           <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto">
-            In nur drei einfachen Schritten zum perfekten Handwerker für Ihr Projekt.
+            In nur drei einfachen Schritten zum passenden Handwerker für Ihr Projekt.
           </p>
         </div>
       </section>

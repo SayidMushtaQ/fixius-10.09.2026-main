@@ -109,15 +109,6 @@ export default function Page6({
           </div>
         )}
       </div>
-
-      <div className="bg-primary/5 p-4 rounded-2xl flex items-start gap-3">
-        <div className="mt-1 shrink-0">
-          <Lock className="w-5 h-5 text-primary" />
-        </div>
-        <p className="text-xs text-gray-500 leading-relaxed">
-          Ihre Daten sind bei uns sicher und werden nur zur Kontaktaufnahme bezüglich Ihres Auftrags verwendet.
-        </p>
-      </div>
     </div>
   );
 }
