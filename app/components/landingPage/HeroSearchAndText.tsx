@@ -252,7 +252,7 @@ export default function HeroSearchAndText({
             >
               <span className="inline-flex items-center gap-1.5">
                 <ShieldCheck className="h-4 w-4 text-primary" />
-                Geprüfte Profis &amp; kostenlose Angebote
+                Geprüfte Handwerker &amp; kostenlose Angebote
               </span>
             </motion.div>
           )}

@@ -285,7 +285,7 @@ const CraftManData = [
   },
   {
     id: 3,
-    name: "Emilia",
+    name: "Sarah",
     job: "Schreinerin",
     img: "/NewImages/carpenter.png",
   },

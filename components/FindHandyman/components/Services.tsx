@@ -104,7 +104,7 @@ export default function Services({
           Finden Sie den passenden <span className="text-primary italic">Handwerker</span> für Ihr Projekt
         </h1>
         <p className="font-inter text-secondary-light text-base md:text-lg font-medium">
-          Wählen Sie einfach eine Kategorie aus, um Angebote von geprüften Anbietern zu erhalten.
+          Wählen Sie einfach eine Handwerker-Kategorie und Ihre Postleitzahl aus, um direkt verfügbare und geprüfte Betriebe in Ihrer Nähe zu finden.
         </p>
       </section>
       <div className="relative">
