@@ -17,7 +17,7 @@ export const CraftsmanCard = ({ name, job, img, index }: { name: string; job: st
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: index * 0.05 }}
-      className="group bg-white rounded-xl border border-slate-100 p-5 shadow-soft w-full max-w-[280px]"
+      className="group bg-white rounded-xl border border-slate-100 p-5 shadow-soft w-full max-w-70"
     >
       <div className="relative aspect-square rounded-lg overflow-hidden mb-6">
         {img?.includes("cloudinary.com") ? (

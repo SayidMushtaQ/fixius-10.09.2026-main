@@ -33,7 +33,7 @@ export default function Hero() {
     <>
       <section className="relative w-full z-20 bg-white flex items-center">
         <div className="Container flex items-center">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full pt-20 pb-20">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full pt-20 pb-8">
           {/* Left Content (Search) */}
           <HeroSearchAndText homePageOrNot={true} />
 

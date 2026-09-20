@@ -42,7 +42,7 @@ export default function Home() {
         "url": "https://www.fixius.de/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.fixius.de/logo.jpg",
+          "url": "https://www.fixius.de/android-chrome-512x512.png",
           "width": 112,
           "height": 112,
         },

@@ -31,7 +31,7 @@ const Cards = ({ title, onClick }: { title: string; onClick?: () => void }) => {
     <button
       type="button"
       onClick={onClick}
-      className="inline-flex items-center px-3.5 py-1.5 m-1 rounded-xl text-xs font-semibold bg-gradient-to-r from-purple-50 via-indigo-50 to-purple-50/80 text-purple-700 border border-purple-100/80 shadow-2xs hover:scale-105 hover:border-purple-300 hover:shadow-sm transition-all duration-200 cursor-pointer"
+      className="inline-flex items-center px-3.5 py-1.5 m-1 rounded-xl text-xs font-semibold bg-linear-to-r from-purple-50 via-indigo-50 to-purple-50/80 text-purple-700 border border-purple-100/80 shadow-2xs hover:scale-105 hover:border-purple-300 hover:shadow-sm transition-all duration-200 cursor-pointer"
     >
       <span>{title}</span>
     </button>
@@ -95,13 +95,13 @@ const Available_handyman = ({ item, service }: any) => {
   return (
     <div className="bg-white/90 backdrop-blur-md rounded-3xl p-6 md:p-8 shadow-xl shadow-slate-200/50 border border-slate-100/80 hover:shadow-2xl hover:border-violet-200/60 transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden group my-6">
       {/* Top Accent Gradient Line */}
-      <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-violet-500 via-indigo-500 to-pink-500 opacity-80 group-hover:opacity-100 transition-opacity duration-300 rounded-t-3xl" />
+      <div className="absolute top-0 left-0 right-0 h-1.5 bg-linear-to-r from-violet-500 via-indigo-500 to-pink-500 opacity-80 group-hover:opacity-100 transition-opacity duration-300 rounded-t-3xl" />
 
       <div className="flex flex-col lg:flex-row gap-8 items-start relative pt-2">
         {/* Left Column: Avatar & Quick Details */}
         <div className="flex flex-col items-center flex-none w-full lg:w-48 text-center">
           <div className="relative group/avatar">
-            <div className="p-1 bg-gradient-to-tr from-violet-500 via-purple-500 to-pink-500 rounded-full shadow-lg shadow-purple-500/20 transition-transform duration-300 group-hover/avatar:scale-105">
+            <div className="p-1 bg-linear-to-tr from-violet-500 via-purple-500 to-pink-500 rounded-full shadow-lg shadow-purple-500/20 transition-transform duration-300 group-hover/avatar:scale-105">
               <Image
                 src={item?.profile_photo}
                 alt={item?.craftsman?.company_name || "Handwerker"}
@@ -115,7 +115,7 @@ const Available_handyman = ({ item, service }: any) => {
 
           <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-sky-50 text-sky-700 border border-sky-100/80 shadow-2xs">
             <MapPin size={13} className="text-sky-500" />
-            <span className="truncate max-w-[120px]">{item?.address?.Place_Name || "Standort"}</span>
+            <span className="truncate max-w-30">{item?.address?.Place_Name || "Standort"}</span>
           </div>
 
           <button className="mt-4 w-full inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 hover:border-slate-300 transition-all shadow-2xs">
@@ -149,7 +149,7 @@ const Available_handyman = ({ item, service }: any) => {
 
               {/* Top Right Action Button */}
               <button
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs md:text-sm font-bold bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs md:text-sm font-bold bg-linear-to-r from-violet-600 via-purple-600 to-indigo-600 hover:from-violet-700 hover:to-indigo-700 text-white shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
                 onClick={() => handleRequestQuote()}
               >
                 <Sparkles size={15} />
@@ -266,7 +266,7 @@ export default function SearchResult({ params }: any) {
   return (
     <div className="w-full my-6">
       {/* Top Colorful Header Hero Banner */}
-      <div className="relative overflow-hidden bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 text-white rounded-3xl p-6 md:p-8 shadow-xl shadow-purple-500/10 mb-8 border border-white/10">
+      <div className="relative overflow-hidden bg-linear-to-r from-violet-600 via-purple-600 to-indigo-600 text-white rounded-3xl p-6 md:p-8 shadow-xl shadow-purple-500/10 mb-8 border border-white/10">
         <div className="absolute -top-12 -right-12 w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-purple-400/20 rounded-full blur-3xl pointer-events-none" />
         
@@ -322,7 +322,7 @@ export default function SearchResult({ params }: any) {
       {data?.pages?.map((page: any, ind: number) => (
         <Fragment key={ind}>
           {page?.users?.length === 0 ? (
-            <NotFoundData text="In deinem Umkreis sind aktuell keine Profile direkt gelistet. Erstelle jetzt deinen Auftrag, damit interessierte Betriebe dich kontaktieren können!" />
+            <NotFoundData text="Keinen Betrieb direkt gefunden? Kein Problem! Erstelle jetzt deinen kostenlosen Auftrag – wir benachrichtigen passende Fachbetriebe in der Umgebung, die sich direkt bei dir melden." />
           ) : (
             page?.users?.map((item: any, ind: number) => (
               <Available_handyman item={item} key={ind} service={handyman} />

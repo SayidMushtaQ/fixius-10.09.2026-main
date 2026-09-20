@@ -73,7 +73,7 @@ export default function Services() {
   };
 
   return (
-    <section className="pt-20 pb-12 bg-main-background overflow-hidden">
+    <section className="pt-8 pb-12 bg-main-background overflow-hidden">
       <div className="Container">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-3xl space-y-4">

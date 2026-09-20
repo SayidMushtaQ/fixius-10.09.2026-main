@@ -64,7 +64,7 @@ export default function Index() {
 				</div>
 			</section>
 
-			<div className="space-y-6 min-h-[400px]">
+			<div className="space-y-6 min-h-100">
 				{data?.pages[0]?.data?.length > 0 ? (
 					data?.pages.map((page, pageIndex) => (
 						<React.Fragment key={pageIndex}>

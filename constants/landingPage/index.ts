@@ -279,19 +279,19 @@ const CraftManData = [
   },
   {
     id: 2,
-    name: "Erik",
+    name: "Sarah",
     job: "Elektriker",
     img: "/NewImages/electrician.png",
   },
   {
     id: 3,
-    name: "Sarah",
+    name: "Emilia",
     job: "Schreinerin",
     img: "/NewImages/carpenter.png",
   },
   {
     id: 4,
-    name: "Matteo",
+    name: "Kevin",
     job: "Sanitär-Profi",
     img: "/NewImages/plumber.png",
   },

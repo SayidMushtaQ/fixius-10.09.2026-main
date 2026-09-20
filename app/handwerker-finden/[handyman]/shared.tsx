@@ -256,7 +256,7 @@ export function ServicePageBody({
       <section className="Container text-center space-y-8 mb-12">
         <h1 className="text-4xl md:text-5xl font-black text-secondary">{serviceTitle} in <span className="text-primary italic">{cityDisplay}</span></h1>
         <p className="max-w-3xl mx-auto text-lg text-gray-600 font-medium leading-relaxed">
-          Suchst du einen {serviceTitle} in {cityDisplay}? Unsere Plattform verbindet dich direkt mit geprüften und zuverlässigen Profis aus deiner Nähe. Vergleiche Kundenbewertungen und wähle den idealen Experten für deine Bedürfnisse.
+          Suchst du einen {serviceTitle} in {cityDisplay}? Unsere Plattform verbindet dich direkt mit geprüften Handwerkern aus deiner Nähe. Vergleiche kostenlose Angebote und wähle den idealen Experten für deine Bedürfnisse.
         </p>
       </section>
 
