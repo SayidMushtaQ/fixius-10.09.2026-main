@@ -167,7 +167,7 @@ export default function Services({
                 <div className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors z-10 font-bold text-sm">
                   PLZ
                 </div>
-                <div className="w-full pl-16 pr-5 py-1 bg-gray-50 border-2 border-transparent focus-within:border-primary/20 focus-within:bg-white rounded-2xl outline-none transition-all shadow-xs min-h-[58px] flex items-center">
+                <div className="w-full pl-16 pr-5 py-1 bg-gray-50 border-2 border-transparent focus-within:border-primary/20 focus-within:bg-white rounded-2xl outline-none transition-all shadow-xs min-h-14.5 flex items-center">
                   <GoogleAutocomplete
                     onSelect={(data) => {
                       setCity(data.city);
