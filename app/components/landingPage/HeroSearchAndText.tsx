@@ -129,7 +129,7 @@ export default function HeroSearchAndText({
         <p
           className={`font-inter text-secondary text-base md:text-lg font-normal leading-relaxed ${homePageOrNot ? "text-left max-w-lg" : "text-center mx-auto"}`}
         >
-          Nutzen Sie unsere Suchleiste, finden Sie passende Anbieter und erhalten Sie kostenlose Angebote.
+          Erstellen Sie Ihren kostenlosen Auftrag, finden Sie über unsere Suchleiste passende Anbieter und erhalten Sie Angebote.
         </p>
 
         <div className="relative group">
@@ -252,7 +252,7 @@ export default function HeroSearchAndText({
             >
               <span className="inline-flex items-center gap-1.5">
                 <ShieldCheck className="h-4 w-4 text-primary" />
-                Geprüfte Handwerker &amp; kostenlose Angebote
+                Geprüfte Handwerker finden &amp; kostenlosen Auftrag einstellen
               </span>
             </motion.div>
           )}

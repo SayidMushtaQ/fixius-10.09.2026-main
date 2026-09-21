@@ -339,9 +339,9 @@ const StepsCardsData = [
     id: 1,
     step: 1,
     img: "/Schritte/Schritt1.svg",
-    title: "Auftrag erstellen",
+    title: "Auftrag kostenlos einstellen",
     paragraph:
-      "Erstellen Sie einen Auftrag und erhalten Sie kostenlose Angebote.",
+      "Erstellen Sie einen Auftrag und erhalten Sie Angebote von Handwerkern.",
   },
   {
     id: 2,

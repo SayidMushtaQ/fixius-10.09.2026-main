@@ -34,10 +34,10 @@ export default function Services() {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 5,
     slidesToScroll: 5,
-    rows: 2,
+    rows: 1,
     arrows: false,
     variableWidth: false,
     responsive: [
@@ -81,7 +81,7 @@ export default function Services() {
               Finden Sie den passenden <span className="text-primary italic">Handwerker</span> für Ihr Projekt
             </h2> */}
             <p className="font-inter text-secondary-light text-lg font-medium">
-              Wählen Sie einfach eine Kategorie aus, um kostenlose Angebote von geprüften Betrieben in Ihrer Nähe zu erhalten
+              Wählen Sie einfach eine Kategorie aus, um Angebote von geprüften Betrieben in Ihrer Nähe zu erhalten
             </p>
           </div>
         </div>
