@@ -7,7 +7,6 @@ import React, { useEffect, useState } from "react";
 const serviceCardPopUPData: serviceCardPopUPDataType = {
 	serviceTitle: {
 		service_title: "",
-		other_title: "",
 		square_meters: "",
 	},
 	additional_details: {
@@ -64,7 +63,7 @@ export default function ServicePage({
 	}, [serviceCardData]);
 	return (
 		<div className="Container">
-			<div className="max-w-[85rem] mx-auto  lg:mt-10 mt-5 shadow-md mb-10 bg-white rounded-md">
+			<div className="max-w-340 mx-auto  lg:mt-10 mt-5 shadow-md mb-10 bg-white rounded-md">
 				{serviceCardData ? (
 					<div className="flex justify-center items-center bg-orange bg-opacity-50 flex-col py-2 px-2  rounded-t-md">
 						<div className="bg-white shadow flex justify-center items-center flex-col py-2 rounded-lg px-3">
@@ -72,7 +71,7 @@ export default function ServicePage({
 								src={`/ServiciosIcon/${
 									serviceCardData && serviceCardData[1]
 								}.svg`}
-								className="object-contain w-14 sm:w-16 md:w-[4.5rem]"
+								className="object-contain w-14 sm:w-16 md:w-18"
 								alt={(params?.slug as string) || "service"}
 								width={70}
 								height={70}
