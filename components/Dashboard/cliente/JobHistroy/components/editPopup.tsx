@@ -45,7 +45,6 @@ const EditPopup: React.FC<EditPopupProps> = ({
 	const [page1Data, setPage1Data] = useState<Page1DataType>({
 		//Page1 data
 		service_title: "",
-		other_title: "",
 		square_meters: "",
 	});
 	const serviceTitle = ServicesTitle.Assembly_service;
