@@ -15,7 +15,6 @@ export function InstructionBar({
     setPage1Data((pre) => ({
       ...pre,
       service_title: title,
-      other_title: "",
     }));
     handleTitleError("");
   };
@@ -95,7 +94,7 @@ export default function Page1({
         ))}
       </div>
 
-      <div className="pt-8 mt-4 border-t border-slate-50">
+      {/* <div className="pt-8 mt-4 border-t border-slate-50">
         <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-300 mb-4">Oder geben Sie etwas anderes ein</p>
         <div className="relative group">
           <input
@@ -112,7 +111,7 @@ export default function Page1({
             </div>
           )}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

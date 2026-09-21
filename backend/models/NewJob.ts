@@ -37,7 +37,6 @@ const jobPostSchema = new mongoose.Schema(
       zip_code: { type: String, required: true },
     },
     serviceTitle: {
-      other_title: { type: String },
       service_title: { type: String },
       square_meters: { type: String },
     },
@@ -80,7 +79,6 @@ interface IJobPost extends Document {
   };
   images: string[];
   serviceTitle: {
-    other_title: string;
     service_title: string;
     square_meters: string;
   };

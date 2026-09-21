@@ -124,7 +124,7 @@ export default function Service({
 
     try {
       if (stepAtEntry === 0) {
-        if (page1Data.service_title !== "" || page1Data.other_title !== "") {
+        if (page1Data.service_title !== "") {
           handleTitleError("");
           next();
         } else {

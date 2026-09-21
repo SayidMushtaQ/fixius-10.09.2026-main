@@ -8,7 +8,6 @@ import { ServiceCards } from "@/constants/landingPage/index";
 const serviceCardPopUPData: serviceCardPopUPDataType = {
   serviceTitle: {
     service_title: "",
-    other_title: "",
     square_meters: "",
   },
   additional_details: {
@@ -40,7 +39,6 @@ export default function ServicePage({
   const [serviceTitle, setServiceTitles] = useState<string[]>([]);
   const [page1Data, setPage1Data] = useState<Page1DataType>({
     service_title: "",
-    other_title: "",
     square_meters: "",
   });
 
@@ -69,7 +67,7 @@ export default function ServicePage({
     }
   }, [serviceCardData]);
 
-  const displayTitle = page1Data.service_title || page1Data.other_title || (serviceCardData && serviceCardData[0]) || "Service";
+  const displayTitle = page1Data.service_title  || (serviceCardData && serviceCardData[0]) || "Service";
 
   return (
     <div className="w-full h-full flex flex-col bg-white overflow-hidden">

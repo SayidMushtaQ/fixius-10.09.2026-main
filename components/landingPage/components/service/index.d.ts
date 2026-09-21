@@ -4,7 +4,6 @@ type SetStringStateAction = React.Dispatch<
 >;
 type Page1DataType = {
 	service_title: ActionTypeString;
-	other_title: ActionTypeString;
 	square_meters: ActionTypeString;
 };
 type NumberOfElementType = {
