@@ -9,7 +9,7 @@ export default function Page7({
   contactDetailsPage,
 }: ContactDetailsPropsTypePag) {
   const { userData } = useAuth();
-  
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setContactDetailsPage((pre: ContactDetailsPageDataType) => ({
@@ -41,15 +41,15 @@ export default function Page7({
       <div className="grid grid-cols-1 gap-6">
         {/* Name Input */}
         <div className="group space-y-3">
-          <label 
-            htmlFor="page6PopUP_name" 
+          <label
+            htmlFor="page6PopUP_name"
             className="block text-sm font-semibold text-secondary group-focus-within:text-primary transition-colors"
           >
-            Vor- und Nachname <span className="text-gray-400 font-normal">(optional)</span>
+            Vor- und Nachname
           </label>
           <div className="relative">
             <div className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>
             </div>
             <input
               type="text"
@@ -62,12 +62,17 @@ export default function Page7({
               className="w-full pl-16 pr-6 py-4 bg-gray-50 border-2 border-transparent focus:border-primary/20 focus:bg-white rounded-2xl outline-none transition-all text-secondary placeholder:text-gray-400 font-semibold shadow-xs text-sm"
             />
           </div>
+          {contactDetailsPageError.nameError && (
+            <p className="text-xs font-semibold text-red-500 ml-2 animate-shake">
+              {contactDetailsPageError.nameError}
+            </p>
+          )}
         </div>
 
         {/* Phone Input */}
         <div className="group space-y-3">
-          <label 
-            htmlFor="page6PopUP_phone__number" 
+          <label
+            htmlFor="page6PopUP_phone__number"
             className="block text-sm font-semibold text-secondary group-focus-within:text-primary transition-colors"
           >
             Telefonnummer

@@ -42,9 +42,9 @@ export default function Service({
   console.log(userData, "userData");
   const [titleError, handleTitleError] = useState<string>("");
   const [step2Error, setStep2Error] = useState<string>("");
-  const [textAreaPageData, setTextAreaPageData] = useState<string>(""); 
-  const [imageDataPageData, setImagePageData] = useState<string[]>([]); 
-  const [locationDataPage, setLocationDataPage] = useState<string>(""); 
+  const [textAreaPageData, setTextAreaPageData] = useState<string>("");
+  const [imageDataPageData, setImagePageData] = useState<string[]>([]);
+  const [locationDataPage, setLocationDataPage] = useState<string>("");
   const [addressId, setAddressId] = React.useState<string>("");
   const [locationDataPageError, setlocationDataPageError] = useState<string>("");
 
@@ -118,10 +118,10 @@ export default function Service({
     if (isHandlingNextRef.current || stepTransitionRef.current) return;
     isHandlingNextRef.current = true;
     setIsHandlingNext(true);
-    
+
     // Capture step index at the start to prevent stale reads
     const stepAtEntry = currentStepIndex;
-    
+
     try {
       if (stepAtEntry === 0) {
         if (page1Data.service_title !== "" || page1Data.other_title !== "") {
@@ -132,12 +132,12 @@ export default function Service({
           return;
         }
       }
-      
+
       if (stepAtEntry === 1) {
-        const isFilled = numberOfElement.square_meters !== "" || 
-                        numberOfElement.how_many_rooms !== "" || 
-                        numberOfElement.how_many_floors !== "";
-        
+        const isFilled = numberOfElement.square_meters !== "" ||
+          numberOfElement.how_many_rooms !== "" ||
+          numberOfElement.how_many_floors !== "";
+
         if (!isFilled) {
           setStep2Error("Bitte füllen Sie mindestens ein Feld aus.");
           return;
@@ -256,6 +256,13 @@ export default function Service({
       }
 
       if (stepAtEntry === 6) {
+        if (contactDetailsPage.name.trim() === "") {
+          setContactDetailsPageError((e) => ({ ...e, nameError: "Name ist erforderlich" }));
+          return;
+        } else {
+          setContactDetailsPageError((e) => ({ ...e, nameError: "" }));
+        }
+
         const cleanPhone = contactDetailsPage.phone.replace(/[\s\+\-]/g, "");
         if (contactDetailsPage.phone === "") {
           setContactDetailsPageError((e) => ({ ...e, phoneError: "Telefonnummer ist erforderlich" }));
@@ -346,7 +353,7 @@ export default function Service({
     } else {
       if (contactDetailsPage.email === "") toast.error("E-Mail ist erforderlich");
       else if (!emailRegex.test(contactDetailsPage.email)) toast.error("E-Mail ist ungültig");
-      
+
       if (contactDetailsPage.phone === "") toast.error("Telefonnummer ist erforderlich");
       else if (isNaN(Number(contactDetailsPage.phone))) toast.error("Telefonnummer muss eine Zahl sein");
 
@@ -378,7 +385,7 @@ export default function Service({
             Als registrierter <strong className="text-slate-900">Handwerker</strong> können Sie keine Aufträge veröffentlichen. Bitte loggen Sie sich mit einem Kundenkonto ein, um diesen Service zu nutzen.
           </p>
         </div>
-        <button 
+        <button
           onClick={() => setServicePopUP(false)}
           className="w-full sm:w-auto bg-primary hover:bg-black text-white font-bold font-montserrat py-3.5 px-12 rounded-lg transition-all active:scale-95 shadow-soft"
         >
@@ -395,8 +402,8 @@ export default function Service({
           <div className="space-y-1">
             <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 block">Fortschritt</span>
             <div className="text-lg font-bold text-slate-900 font-inter">
-              Schritt <span className="text-primary">{currentStepIndex + 1}</span> 
-              <span className="text-slate-200 mx-3">/</span> 
+              Schritt <span className="text-primary">{currentStepIndex + 1}</span>
+              <span className="text-slate-200 mx-3">/</span>
               <span className="text-slate-400">{totalSteps}</span>
             </div>
           </div>
@@ -407,9 +414,9 @@ export default function Service({
             </div>
           </div>
         </div>
-        
+
         <div className="relative h-1.5 w-full bg-slate-50 rounded-full overflow-hidden">
-          <div 
+          <div
             style={{ width: `${progress}%` }}
             className="h-full bg-primary rounded-full transition-all duration-500 ease-out"
           />
@@ -421,7 +428,7 @@ export default function Service({
           {step}
         </div>
       </div>
-      
+
       {/* Footer Buttons - Fixed at Bottom with Glassmorphism */}
       <div className="shrink-0 py-4 px-6 md:px-10 border-t border-slate-50 bg-orange-50 z-20 mt-auto">
         {isLastStep && (
@@ -446,14 +453,13 @@ export default function Service({
               Zurück
             </button>
           )}
-          
+
           {!isLastStep ? (
             <button
               onClick={handleNext}
               disabled={isNextBtnDisable || isHandlingNext}
-              className={`w-full sm:w-auto px-16 py-4 rounded-xl bg-primary hover:bg-orange text-white font-bold tracking-widest shadow-lg shadow-primary/20 transition-all duration-300 transform active:scale-[0.98] cursor-pointer flex items-center justify-center gap-3 text-sm font-inter ${
-                isNextBtnDisable || isHandlingNext ? "opacity-30 cursor-not-allowed grayscale shadow-none" : ""
-              }`}
+              className={`w-full sm:w-auto px-16 py-4 rounded-xl bg-primary hover:bg-orange text-white font-bold tracking-widest shadow-lg shadow-primary/20 transition-all duration-300 transform active:scale-[0.98] cursor-pointer flex items-center justify-center gap-3 text-sm font-inter ${isNextBtnDisable || isHandlingNext ? "opacity-30 cursor-not-allowed grayscale shadow-none" : ""
+                }`}
             >
               {isHandlingNext ? "LÄDT..." : "WEITER"}
               {!isHandlingNext && <span className="text-base font-normal">→</span>}
