@@ -25,7 +25,6 @@ export default function Service({
   const [page1Data, setPage1Data] = useState<Page1DataType>({
     //Page1 data
     service_title: "",
-    other_title: "",
     square_meters: "",
   });
   // const {userData} = useAuth()
@@ -130,7 +129,7 @@ export default function Service({
     }
   }, [currentStepIndex, setIsLastStep]);
   function handleNext() {
-    if (page1Data.service_title !== "" || page1Data.other_title !== "") {
+    if (page1Data.service_title !== "") {
       if (currentStepIndex === 0) {
         next();
       }

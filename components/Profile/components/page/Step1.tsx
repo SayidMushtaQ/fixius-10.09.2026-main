@@ -67,7 +67,6 @@ function InstructionBar({
       ...pre,
       [name]: value,
     }));
-    page1Data.other_title = "";
     handleTitleError("");
   };
   return (
@@ -154,23 +153,6 @@ export default function Page1({
               ))}
             </ul>
             {/* Constant */}
-            <div className="space-y-5 mt-5 mb-5">
-              <div className="flex gap-5 flex-wrap">
-                <div className="flex text-sm sm:text-[15px] justify-between items-center bg-white shadow px-4 py-3 rounded-lg border">
-                  <li>Otra </li>
-                </div>
-                <div className="flex justify-between items-center bg-white shadow px-4 py-3 rounded-lg border">
-                  <input
-                    type="text"
-                    placeholder="Geben Sie einen Titel ein"
-                    name="other_title"
-                    className="outline-none"
-                    onChange={handleChangeInput}
-                    value={page1Data.other_title}
-                  />
-                </div>
-              </div>
-            </div>
           </ul>
         </div>
       </div>
