@@ -68,7 +68,7 @@ export default function Home() {
         <Steps isShowHeadingText={true} />
 
         {/* Live Jobs Feed */}
-        <NewListedOrders />
+        {/* <NewListedOrders /> */}
 
         {/* Best Rated Craftsmen */}
         <Craftsman />

@@ -64,7 +64,7 @@ export default function SoFunktioniertesPage() {
       <Steps isShowHeadingText={false} />
 
       {/* Trust Badge Section - New Listed Orders */}
-      <NewListedOrders />
+      {/* <NewListedOrders /> */}
 
       {/* Best Rated Craftsmen */}
       <Craftsman />

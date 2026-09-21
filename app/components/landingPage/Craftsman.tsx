@@ -4,7 +4,7 @@ import Reveal from "./Reveal";
 
 export default function Craftsman() {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section className="py-24 bg-main-background relative overflow-hidden">
        {/* Background accent - subtle sky blue glow */}
       <div className="absolute -bottom-24 -right-24 w-150 h-150 bg-accent-cyan/5 rounded-full blur-[120px] -z-10" />
 
