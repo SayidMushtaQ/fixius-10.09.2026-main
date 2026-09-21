@@ -7,7 +7,6 @@ import ServicePopUpWrapper from "./ServicePopUpWrapper";
 const serviceCardPopUPData: serviceCardPopUPDataType = {
   serviceTitle: {
     service_title: "",
-    other_title: "",
     square_meters: "",
   },
   additional_details: {
