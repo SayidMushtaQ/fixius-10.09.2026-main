@@ -11,7 +11,7 @@ export default function AgbPage() {
   return (
     <article className="prose prose-slate max-w-none text-Heading/90 leading-relaxed font-inter">
       <h1 className="text-3xl md:text-4xl font-black text-secondary mb-8 border-b pb-4 border-gray-100 font-outfit">
-        Allgemeine Geschäftsbedingungen (AGB) – Fixius
+        Allgemeine Geschäftsbedingungen (AGB) : Fixius - Handwerksportal
       </h1>
 
       <div className="space-y-8">
@@ -24,26 +24,26 @@ export default function AgbPage() {
             (1) Die nachfolgenden Allgemeinen Geschäftsbedingungen gelten für die Nutzung des Internetportals Fixius – Handwerksportal (nachfolgend „Fixius“ oder „Plattform“). Betreiber der Plattform ist Giuseppe Licopoli (Anschrift laut Impressum).
           </p>
           <p className="text-slate-700 leading-relaxed">
-            (2) Fixius bietet eine digitale Plattform, über die Auftraggeber (Kunden) und Handwerker bzw. Dienstleister (Auftragnehmer) zusammengebracht werden, um Verträge über handwerkliche Dienstleistungen anzubahnen.
+            (2) Fixius - Handwerksportal bietet eine digitale Plattform, über die Auftraggeber (Kunden) und Handwerker bzw. Dienstleister (Auftragnehmer) zusammengebracht werden, um Verträge über handwerkliche Dienstleistungen anzubahnen.
           </p>
           <p className="text-slate-700 leading-relaxed">
-            (3) Entgegenstehende oder von diesen AGB abweichende Bedingungen der Nutzer finden keine Anwendung, es sei denn, Fixius hat ihrer Geltung ausdrücklich schriftlich zugestimmt.
+            (3) Entgegenstehende oder von diesen AGB abweichende Bedingungen der Nutzer finden keine Anwendung, es sei denn, Fixius - Handwerksportal hat ihrer Geltung ausdrücklich schriftlich zugestimmt.
           </p>
         </section>
 
         {/* § 2 */}
         <section className="space-y-3">
           <h2 className="text-xl md:text-2xl font-bold text-secondary font-outfit">
-            2. Leistungen von Fixius &amp; Rolle als Vermittler
+            2. Leistungen von Fixius - Handwerksportal &amp; Rolle als Vermittler
           </h2>
           <p className="text-slate-700 leading-relaxed">
-            (1) Fixius stellt lediglich die technische Infrastruktur (Marktplatz) zur Verfügung, um den Kontakt zwischen Auftraggebern und Handwerkern zu ermöglichen.
+            (1) Fixius - Handwerksportal stellt lediglich die technische Infrastruktur (Marktplatz) zur Verfügung, um den Kontakt zwischen Auftraggebern und Handwerkern zu ermöglichen.
           </p>
           <p className="text-slate-700 leading-relaxed">
-            (2) Fixius wird selbst nicht Vertragspartner der Verträge, die über die Plattform zwischen Auftraggebern und Handwerkern geschlossen werden. Die Durchführung, Abrechnung und Gewährleistung für Handwerksleistungen erfolgen ausschließlich direkt zwischen den Vertragsparteien.
+            (2) Fixius - Handwerksportal wird selbst nicht Vertragspartner der Verträge, die über die Plattform zwischen Auftraggebern und Handwerkern geschlossen werden. Die Durchführung, Abrechnung und Gewährleistung für Handwerksleistungen erfolgen ausschließlich direkt zwischen den Vertragsparteien.
           </p>
           <p className="text-slate-700 leading-relaxed">
-            (3) Fixius übernimmt keine Gewähr für die Richtigkeit der Angaben in Nutzerprofilen oder Auftragsbeschreibungen sowie für die Qualität oder Pünktlichkeit der erbrachten Handwerksleistungen.
+            (3) Fixius - Handwerksportal übernimmt keine Gewähr für die Richtigkeit der Angaben in Nutzerprofilen oder Auftragsbeschreibungen sowie für die Qualität oder Pünktlichkeit der erbrachten Handwerksleistungen.
           </p>
         </section>
 
@@ -85,10 +85,10 @@ export default function AgbPage() {
         {/* § 5 */}
         <section className="space-y-3">
           <h2 className="text-xl md:text-2xl font-bold text-secondary font-outfit">
-            5. Haftung von Fixius
+            5. Haftung von Fixius - Handwerksportal
           </h2>
           <p className="text-slate-700 leading-relaxed">
-            (1) Für Schäden haftet Fixius unbeschränkt nur bei Vorsatz und grober Fahrlässigkeit.
+            (1) Für Schäden haftet Fixius - Handwerksportal unbeschränkt nur bei Vorsatz und grober Fahrlässigkeit.
           </p>
           <p className="text-slate-700 leading-relaxed">
             (2) Bei leicht fahrlässiger Verletzung wesentlicher Vertragspflichten (Kardinalpflichten) ist die Haftung auf den vertragstypischen, vorhersehbaren Schaden begrenzt.
@@ -97,7 +97,7 @@ export default function AgbPage() {
             (3) Die Haftung für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie nach dem Produkthaftungsgesetz bleibt unberührt.
           </p>
           <p className="text-slate-700 leading-relaxed">
-            (4) Fixius haftet nicht für die Bonität der Nutzer oder das Zustandekommen von Aufträgen.
+            (4) Fixius - Handwerksportal haftet nicht für die Bonität der Nutzer oder das Zustandekommen von Aufträgen.
           </p>
         </section>
 
