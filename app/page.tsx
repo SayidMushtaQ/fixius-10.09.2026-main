@@ -65,7 +65,7 @@ export default function Home() {
         <Services />
 
         {/* How it Works / Steps */}
-        <Steps isShowHeadingText={true} />
+        <Steps  />
 
         {/* Live Jobs Feed */}
         {/* <NewListedOrders /> */}
