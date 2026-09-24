@@ -61,7 +61,7 @@ export default function SoFunktioniertesPage() {
       </section>
 
       {/* Steps Section */}
-      <Steps isShowHeadingText={false} />
+      <Steps />
 
       {/* Trust Badge Section - New Listed Orders */}
       {/* <NewListedOrders /> */}
