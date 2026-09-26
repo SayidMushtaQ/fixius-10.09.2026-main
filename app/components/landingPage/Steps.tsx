@@ -153,98 +153,102 @@ function TrustVisual() {
 
       {/* Main profile card */}
       <motion.div
-        className="relative z-10 w-[78%] max-w-77.5 rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_24px_55px_rgba(20,26,46,0.12)] sm:w-[72%] sm:p-6"
+        className="relative z-10 w-[78%] max-w-77.5"
         variants={fadeUp}
-        animate={{
-          y: [0, -7, 0],
-        }}
-        transition={{
-          y: {
-            duration: 5,
-            repeat: Infinity,
-            ease: 'easeInOut',
-          },
-        }}
       >
-        {/* Verified profile */}
-        <div className="flex items-center gap-2 text-[9px] font-extrabold uppercase tracking-wider text-emerald-600 sm:text-[10px]">
-          <span className="h-2 w-2 rounded-full bg-emerald-500" />
-
-          geprüftes Profil
-        </div>
-
-        {/* Avatar */}
         <motion.div
-          className="mx-auto my-5 grid h-14 w-14 place-items-center rounded-full bg-orange-50 text-lg font-extrabold text-orange-700 sm:my-6 sm:h-16 sm:w-16 sm:text-xl"
+          className="rounded-2xl border border-slate-200 bg-white p-5 shadow-[0_24px_55px_rgba(20,26,46,0.12)] sm:p-6"
           animate={{
-            scale: [1, 1.05, 1],
+            y: -8,
           }}
           transition={{
-            duration: 3,
-            repeat: Infinity,
-            ease: 'easeInOut',
+            y: {
+              duration: 4,
+              repeat: Infinity,
+              repeatType: 'mirror',
+              ease: 'easeInOut',
+            },
           }}
         >
-          MK
-        </motion.div>
+          {/* Verified profile */}
+          <div className="flex items-center gap-2 text-[9px] font-extrabold uppercase tracking-wider text-emerald-600 sm:text-[10px]">
+            <span className="h-2 w-2 rounded-full bg-emerald-500" />
+            geprüftes Profil
+          </div>
 
-        {/* Name */}
-        <div className="text-center text-lg font-extrabold sm:text-xl">
-          Marek &amp; Team
-        </div>
-
-        {/* Profession */}
-        <div className="mb-4 mt-1 text-center text-[11px] text-slate-500 sm:text-xs">
-          Sanitär · Heizung · Service
-        </div>
-
-        {/* Rating */}
-        <div className="border-y border-slate-100 py-3 text-center text-xs">
-          <strong className="mr-1 text-base text-slate-900">
-            4,9
-          </strong>
-
-          <span className="tracking-wide text-amber-400">
-            ★★★★★
-          </span>
-
-          <small className="text-slate-500">
-            {' '}
-            38 Bewertungen
-          </small>
-        </div>
-
-        {/* Tags */}
-        <div className="my-4 flex flex-wrap justify-center gap-2">
-          <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[9px] font-bold text-slate-500 sm:text-[10px]">
-            zuverlässig
-          </span>
-
-          <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[9px] font-bold text-slate-500 sm:text-[10px]">
-            pünktlich
-          </span>
-        </div>
-
-        {/* Button */}
-        <motion.button
-          type="button"
-          className="flex w-full items-center justify-between rounded-lg bg-[#ff6a18] px-4 py-3 text-sm font-bold text-white"
-          whileHover={{
-            scale: 1.02,
-          }}
-          whileTap={{
-            scale: 0.97,
-          }}
-        >
-          <span>Profil ansehen</span>
-
-          <span
-            aria-hidden="true"
-            className="text-lg"
+          {/* Avatar */}
+          <motion.div
+            className="mx-auto my-5 grid h-14 w-14 place-items-center rounded-full bg-orange-50 text-lg font-extrabold text-orange-700 sm:my-6 sm:h-16 sm:w-16 sm:text-xl"
+            animate={{
+              scale: [1, 1.04, 1],
+            }}
+            transition={{
+              duration: 3.5,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
           >
-            →
-          </span>
-        </motion.button>
+            MK
+          </motion.div>
+
+          {/* Name */}
+          <div className="text-center text-lg font-extrabold sm:text-xl">
+            Marek &amp; Team
+          </div>
+
+          {/* Profession */}
+          <div className="mb-4 mt-1 text-center text-[11px] text-slate-500 sm:text-xs">
+            Sanitär · Heizung · Service
+          </div>
+
+          {/* Rating */}
+          <div className="border-y border-slate-100 py-3 text-center text-xs">
+            <strong className="mr-1 text-base text-slate-900">
+              4,9
+            </strong>
+
+            <span className="tracking-wide text-amber-400">
+              ★★★★★
+            </span>
+
+            <small className="text-slate-500">
+              {' '}
+              38 Bewertungen
+            </small>
+          </div>
+
+          {/* Tags */}
+          <div className="my-4 flex flex-wrap justify-center gap-2">
+            <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[9px] font-bold text-slate-500 sm:text-[10px]">
+              zuverlässig
+            </span>
+
+            <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[9px] font-bold text-slate-500 sm:text-[10px]">
+              pünktlich
+            </span>
+          </div>
+
+          {/* Button */}
+          <motion.button
+            type="button"
+            className="flex w-full items-center justify-between rounded-lg bg-[#ff6a18] px-4 py-3 text-sm font-bold text-white"
+            whileHover={{
+              scale: 1.02,
+            }}
+            whileTap={{
+              scale: 0.97,
+            }}
+          >
+            <span>Profil ansehen</span>
+
+            <span
+              aria-hidden="true"
+              className="text-lg"
+            >
+              →
+            </span>
+          </motion.button>
+        </motion.div>
       </motion.div>
 
       {/* Verified badge */}
@@ -287,30 +291,9 @@ function TrustVisual() {
         </span>
       </motion.div>
 
-      ```tsx
       {/* Rating badge */}
       <motion.div
-        className="
-    absolute
-    bottom-[2%]
-    left-0
-    z-20
-    flex
-    items-center
-    gap-2
-    rounded-xl
-    border
-    border-slate-200
-    bg-white
-    px-2.5
-    py-2
-    shadow-lg
-    pointer-events-none
-    sm:bottom-[5%]
-    sm:left-[1%]
-    sm:px-3
-    sm:py-2.5
-  "
+        className="absolute bottom-[2%] left-0 z-20 flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-2.5 py-2 shadow-lg pointer-events-none sm:bottom-[5%] sm:left-[1%] sm:px-3 sm:py-2.5"
         initial={{
           opacity: 0,
           x: -30,
@@ -333,31 +316,11 @@ function TrustVisual() {
         animate={{
           y: [0, -2, 0],
         }}
-        whileHover={{
-          scale: 1.02,
-        }}
       >
-        {/* Star */}
-        <span
-          className="
-      grid
-      h-6
-      w-6
-      shrink-0
-      place-items-center
-      rounded-lg
-      bg-amber-50
-      text-sm
-      font-black
-      text-amber-500
-      sm:h-7
-      sm:w-7
-    "
-        >
+        <span className="grid h-6 w-6 shrink-0 place-items-center rounded-lg bg-amber-50 text-sm font-black text-amber-500 sm:h-7 sm:w-7">
           ★
         </span>
 
-        {/* Rating text */}
         <span className="whitespace-nowrap">
           <strong className="block text-[10px] leading-tight sm:text-xs">
             4,9 / 5
@@ -368,9 +331,149 @@ function TrustVisual() {
           </small>
         </span>
       </motion.div>
-      ```
-
     </motion.div>
+  )
+}
+
+/* --------------------------------
+   CTA Section
+--------------------------------- */
+
+function CTASection() {
+  return (
+    <section
+      className="px-5 py-10 sm:px-6 sm:py-14 md:px-12 md:py-16"
+      aria-labelledby="cta-title"
+    >
+      <motion.div
+        className="relative mx-auto flex max-w-295 flex-col items-start justify-between gap-8 overflow-hidden rounded-3xl border border-slate-200 bg-[#141a2e] px-6 py-8 text-white shadow-[0_24px_60px_rgba(20,26,46,0.14)] sm:px-8 sm:py-10 md:flex-row md:items-center md:px-12 md:py-12"
+        initial={{
+          opacity: 0,
+          y: 35,
+        }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+        }}
+        viewport={{
+          once: true,
+          amount: 0.25,
+        }}
+        animate={{
+          y: [0, -6, 0, 5, 0],
+        }}
+        transition={{
+          opacity: {
+            duration: 0.7,
+            ease: 'easeOut',
+          },
+          y: {
+            duration: 6,
+            repeat: Infinity,
+            ease: 'easeInOut',
+          },
+        }}
+      >
+        {/* Decorative glow */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-orange-500/10 blur-3xl"
+        />
+
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -bottom-24 left-[35%] h-48 w-48 rounded-full bg-orange-500/5 blur-3xl"
+        />
+
+        {/* Content */}
+        <motion.div
+          className="relative z-10"
+          initial={{
+            opacity: 0,
+            x: -20,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            delay: 0.15,
+            duration: 0.6,
+            ease: 'easeOut',
+          }}
+        >
+          <p className="mb-2 text-[11px] font-extrabold uppercase tracking-[0.14em] text-orange-400 sm:text-xs">
+            Bereit für den nächsten Schritt?
+          </p>
+
+          <h2
+            id="cta-title"
+            className="max-w-170 text-3xl font-bold leading-tight tracking-[-0.03em] text-white sm:text-4xl md:text-5xl"
+          >
+            Aus Idee wird{' '}
+            <span className="text-orange-400">
+              Projekt.
+            </span>
+          </h2>
+
+          <p className="mt-3 max-w-145 text-sm leading-relaxed text-slate-300 sm:text-[15px]">
+            Beschreiben Sie Ihr Vorhaben und finden Sie passende
+            Fachleute für Ihr Projekt.
+          </p>
+        </motion.div>
+
+        {/* CTA Button */}
+        <motion.a
+          className="relative z-10 inline-flex w-full shrink-0 items-center justify-between gap-8 rounded-xl bg-[#ff6a18] px-5 py-4 text-sm font-extrabold text-white shadow-[0_10px_25px_rgba(255,106,24,0.22)] transition-colors hover:bg-[#e85b0d] sm:px-6 sm:py-4 md:w-auto md:justify-start"
+          href="#auftrag"
+          whileHover={{
+            scale: 1.03,
+            y: -2,
+          }}
+          whileTap={{
+            scale: 0.97,
+          }}
+          initial={{
+            opacity: 0,
+            x: 20,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          viewport={{
+            once: true,
+          }}
+          transition={{
+            delay: 0.25,
+            duration: 0.6,
+            ease: 'easeOut',
+          }}
+        >
+          <span>
+            Auftrag kostenlos starten
+          </span>
+
+          <motion.span
+            aria-hidden="true"
+            className="text-xl"
+            animate={{
+              x: [0, 4, 0],
+            }}
+            transition={{
+              duration: 1.8,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
+          >
+            →
+          </motion.span>
+        </motion.a>
+      </motion.div>
+    </section>
   )
 }
 
@@ -507,6 +610,10 @@ export default function Page() {
           <TrustVisual />
         </div>
       </section>
+
+      {/* CTA */}
+      <CTASection />
+
     </main>
   )
 }
