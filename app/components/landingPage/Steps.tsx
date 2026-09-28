@@ -6,6 +6,7 @@ import {
   HardHat,
   MessagesSquare,
 } from 'lucide-react'
+import Link from 'next/link'
 
 const steps = [
   {
@@ -229,15 +230,9 @@ function TrustVisual() {
           </div>
 
           {/* Button */}
-          <motion.button
+          <button
             type="button"
             className="flex w-full items-center justify-between rounded-lg bg-[#ff6a18] px-4 py-3 text-sm font-bold text-white"
-            whileHover={{
-              scale: 1.02,
-            }}
-            whileTap={{
-              scale: 0.97,
-            }}
           >
             <span>Profil ansehen</span>
 
@@ -247,7 +242,7 @@ function TrustVisual() {
             >
               →
             </span>
-          </motion.button>
+          </button>
         </motion.div>
       </motion.div>
 
@@ -340,6 +335,7 @@ function TrustVisual() {
 --------------------------------- */
 
 function CTASection() {
+  const MotionLink = motion(Link);
   return (
     <section
       className="px-5 py-10 sm:px-6 sm:py-14 md:px-12 md:py-16"
@@ -386,25 +382,8 @@ function CTASection() {
         />
 
         {/* Content */}
-        <motion.div
-          className="relative z-10"
-          initial={{
-            opacity: 0,
-            x: -20,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-          }}
-          viewport={{
-            once: true,
-          }}
-          transition={{
-            delay: 0.15,
-            duration: 0.6,
-            ease: 'easeOut',
-          }}
-        >
+        <div
+          className="relative z-10">
           <p className="mb-2 text-[11px] font-extrabold uppercase tracking-[0.14em] text-orange-400 sm:text-xs">
             Bereit für den nächsten Schritt?
           </p>
@@ -420,15 +399,14 @@ function CTASection() {
           </h2>
 
           <p className="mt-3 max-w-145 text-sm leading-relaxed text-slate-300 sm:text-[15px]">
-            Beschreiben Sie Ihr Vorhaben und finden Sie passende
-            Fachleute für Ihr Projekt.
+            Beschreiben Sie Ihr Vorhaben und finden Sie passende Handwerker für Ihr Projekt.
           </p>
-        </motion.div>
+        </div>
 
         {/* CTA Button */}
-        <motion.a
+        <MotionLink
           className="relative z-10 inline-flex w-full shrink-0 items-center justify-between gap-8 rounded-xl bg-[#ff6a18] px-5 py-4 text-sm font-extrabold text-white shadow-[0_10px_25px_rgba(255,106,24,0.22)] transition-colors hover:bg-[#e85b0d] sm:px-6 sm:py-4 md:w-auto md:justify-start"
-          href="#auftrag"
+          href="/auftrag-erstellen"
           whileHover={{
             scale: 1.03,
             y: -2,
@@ -471,7 +449,7 @@ function CTASection() {
           >
             →
           </motion.span>
-        </motion.a>
+        </MotionLink>
       </motion.div>
     </section>
   )
@@ -596,3 +574,39 @@ export default function Page() {
     </main>
   )
 }
+
+
+
+// hello
+// hi
+// here we see orignal demo code
+// the Card is moving up and down rogh?
+// here the Card is also moving Maybe littile differnt way.
+
+// ok but is ok like this
+// klick on the Profil ansehen button
+// okay i will remoe athe Action.
+// ok
+
+// this part is moving up and down?
+// yes as i see i will fix that also
+// ok
+// we Need same like demo code
+
+// okay but the button we crease should to go in somewhere>
+// yes this button 
+
+// https://fixius-10-09-2026-main.vercel.app/auftrag-erstellen
+// it go to this link
+
+// auftrag kostenlos starten go to https://fixius-10-09-2026-main.vercel.app
+
+// ok
+// Profil ansehen button go to nowhere
+// ok 
+
+// it is only demo button how profiles like Looks
+// okay i undestand.
+
+// Ok whe this is done knock me then we will fix next step
+
