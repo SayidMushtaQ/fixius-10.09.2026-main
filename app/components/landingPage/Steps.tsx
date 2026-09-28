@@ -519,27 +519,6 @@ export default function Page() {
             Von der ersten Idee bis zum fertigen Projekt: Finden Sie
             Fachleute, denen Sie Ihre vier Wände anvertrauen möchten.
           </p>
-
-          {/* Standards link */}
-          <motion.a
-            href="#ablauf"
-            className="inline-flex items-center gap-2 rounded-md border border-orange-200 px-3 py-2 text-sm font-bold text-orange-600"
-            whileHover={{
-              scale: 1.04,
-            }}
-            whileTap={{
-              scale: 0.97,
-            }}
-          >
-            <span
-              aria-hidden="true"
-              className="grid h-5 w-5 place-items-center rounded-full bg-orange-600 text-sm text-white"
-            >
-              ↗
-            </span>
-
-            Mehr über unsere Qualitätsstandards
-          </motion.a>
         </motion.div>
 
         {/* Content */}
