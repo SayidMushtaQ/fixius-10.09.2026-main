@@ -341,35 +341,8 @@ function CTASection() {
       className="px-5 py-10 sm:px-6 sm:py-14 md:px-12 md:py-16"
       aria-labelledby="cta-title"
     >
-      <motion.div
-        className="relative mx-auto flex max-w-295 flex-col items-start justify-between gap-8 overflow-hidden rounded-3xl border border-slate-200 bg-[#141a2e] px-6 py-8 text-white shadow-[0_24px_60px_rgba(20,26,46,0.14)] sm:px-8 sm:py-10 md:flex-row md:items-center md:px-12 md:py-12"
-        initial={{
-          opacity: 0,
-          y: 35,
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        viewport={{
-          once: true,
-          amount: 0.25,
-        }}
-        animate={{
-          y: [0, -6, 0, 5, 0],
-        }}
-        transition={{
-          opacity: {
-            duration: 0.7,
-            ease: 'easeOut',
-          },
-          y: {
-            duration: 6,
-            repeat: Infinity,
-            ease: 'easeInOut',
-          },
-        }}
-      >
+      <div
+        className="relative mx-auto flex max-w-295 flex-col items-start justify-between gap-8 overflow-hidden rounded-3xl border border-slate-200 bg-[#141a2e] px-6 py-8 text-white shadow-[0_24px_60px_rgba(20,26,46,0.14)] sm:px-8 sm:py-10 md:flex-row md:items-center md:px-12 md:py-12">
         {/* Decorative glow */}
         <div
           aria-hidden="true"
@@ -450,7 +423,7 @@ function CTASection() {
             →
           </motion.span>
         </MotionLink>
-      </motion.div>
+      </div>
     </section>
   )
 }
@@ -576,37 +549,4 @@ export default function Page() {
 }
 
 
-
-// hello
-// hi
-// here we see orignal demo code
-// the Card is moving up and down rogh?
-// here the Card is also moving Maybe littile differnt way.
-
-// ok but is ok like this
-// klick on the Profil ansehen button
-// okay i will remoe athe Action.
-// ok
-
-// this part is moving up and down?
-// yes as i see i will fix that also
-// ok
-// we Need same like demo code
-
-// okay but the button we crease should to go in somewhere>
-// yes this button 
-
-// https://fixius-10-09-2026-main.vercel.app/auftrag-erstellen
-// it go to this link
-
-// auftrag kostenlos starten go to https://fixius-10-09-2026-main.vercel.app
-
-// ok
-// Profil ansehen button go to nowhere
-// ok 
-
-// it is only demo button how profiles like Looks
-// okay i undestand.
-
-// Ok whe this is done knock me then we will fix next step
 
