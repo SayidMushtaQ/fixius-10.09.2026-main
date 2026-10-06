@@ -29,6 +29,7 @@ import {
   Star,
 } from "lucide-react";
 import Link from "next/link";
+import OtherServiceButton from "@/components/FindHandyman/OtherServiceButton";
 
 /* -------------------------------------------------------------------------- */
 /*                              TRANSLITERATION                               */
@@ -241,12 +242,10 @@ export function buildServiceMetadata(
   }
 
   return {
-    title: `${changeServiceFormat(handyman)} in ${
-      city ? changeServiceFormat(city) : "deiner Nähe"
-    }`,
-    description: `Suchst du einen ${changeServiceFormat(handyman)} in ${
-      city ? changeServiceFormat(city) : "deiner Nähe"
-    }?`,
+    title: `${changeServiceFormat(handyman)} in ${city ? changeServiceFormat(city) : "deiner Nähe"
+      }`,
+    description: `Suchst du einen ${changeServiceFormat(handyman)} in ${city ? changeServiceFormat(city) : "deiner Nähe"
+      }?`,
     alternates: { canonical: canonicalPath },
   };
 }
@@ -295,16 +294,15 @@ function ServiceHero({
               <p className="mt-6 text-[13px] font-bold leading-5 text-[#f15b2a]">
                 {serviceTitle} in{" "}
                 {zipCodes.length
-                  ? `den Postleitzahlgebieten ${zipCodes.join(", ")}${
-                      locationData.length > zipCodes.length
-                        ? " und Umgebung"
-                        : ""
-                    }`
+                  ? `den Postleitzahlgebieten ${zipCodes.join(", ")}${locationData.length > zipCodes.length
+                    ? " und Umgebung"
+                    : ""
+                  }`
                   : cityDisplay}
                 .
               </p>
 
-              <p className="mt-3 max-w-[460px] text-[15px] leading-7 text-slate-500">
+              <p className="mt-3 max-w-115 text-[15px] leading-7 text-slate-500">
                 Sie suchen einen {serviceTitle} in {cityDisplay}? Beschreiben
                 Sie Ihr Vorhaben und erhalten Sie passende Rückmeldungen von
                 Handwerkern aus Ihrer Nähe.
@@ -321,7 +319,7 @@ function ServiceHero({
                 {serviceTitle} beauftragen
               </h2>
 
-              <p className="mx-auto mt-3 max-w-[240px] text-[11px] leading-4 text-slate-500">
+              <p className="mx-auto mt-3 max-w-60 text-[11px] leading-4 text-slate-500">
                 Klicken Sie hier, um in wenigen Schritten Ihren Auftrag zu
                 erstellen
               </p>
@@ -348,13 +346,8 @@ function ServiceHero({
                 )}
               </div>
 
-              <Link
-                href="/auftrag-erstellen"
-                className="mt-5 inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-4 py-2.5 text-[11px] font-bold text-slate-800 transition hover:border-[#f15b2a] hover:text-[#f15b2a]"
-              >
-                Anderen Service gesucht?
-                <ArrowRight size={12} />
-              </Link>
+              <OtherServiceButton />
+
             </div>
           </div>
         </div>
@@ -377,7 +370,7 @@ function QualifiedBanner({
   return (
     <section className="Container">
       <div className="lg:px-4">
-        <div className="rounded-2xl bg-gradient-to-r from-[#8a2be2] via-[#7a2ff0] to-[#5b3cf0] px-6 py-6 text-white shadow-[0_18px_40px_rgba(99,57,238,0.22)]">
+        <div className="rounded-2xl bg-linear-to-r from-[#8a2be2] via-[#7a2ff0] to-[#5b3cf0] px-6 py-6 text-white shadow-[0_18px_40px_rgba(99,57,238,0.22)]">
           <span className="mb-3 inline-flex rounded-full border border-white/20 bg-white/15 px-2.5 py-1 text-[10px] font-semibold">
             Geprüfte Handwerker
           </span>
@@ -435,9 +428,9 @@ function mapUserToCard(user: any): CardData {
   const services: string[] = Array.isArray(rawServices)
     ? rawServices
     : String(rawServices || "")
-        .split(/[,|]/)
-        .map((s) => s.trim())
-        .filter(Boolean);
+      .split(/[,|]/)
+      .map((s) => s.trim())
+      .filter(Boolean);
 
   const name = user?.name || "Handwerker";
 
@@ -477,16 +470,14 @@ function HandwerkerCard({
             {/* Name block */}
             <div className="min-w-0">
               <span
-                className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[10px] font-bold ${
-                  card.verified
-                    ? "border-emerald-200 bg-emerald-50 text-emerald-700"
-                    : "border-amber-200 bg-amber-50/60 text-amber-700"
-                }`}
+                className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[10px] font-bold ${card.verified
+                  ? "border-emerald-200 bg-emerald-50 text-emerald-700"
+                  : "border-amber-200 bg-amber-50/60 text-amber-700"
+                  }`}
               >
                 <span
-                  className={`h-1.5 w-1.5 rounded-full ${
-                    card.verified ? "bg-emerald-500" : "bg-amber-500"
-                  }`}
+                  className={`h-1.5 w-1.5 rounded-full ${card.verified ? "bg-emerald-500" : "bg-amber-500"
+                    }`}
                 />
                 {card.verified ? "Verifiziert" : "Nicht verifiziert"}
               </span>
@@ -509,7 +500,7 @@ function HandwerkerCard({
                   pathname: "/auftrag-erstellen",
                   query: { service: handyman },
                 }}
-                className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#8a2be2] to-[#5b3cf0] px-4 py-2.5 text-[11px] font-bold text-white shadow-[0_10px_24px_rgba(99,57,238,0.3)] transition hover:opacity-90"
+                className="inline-flex items-center gap-2 rounded-lg bg-linear-to-r from-[#8a2be2] to-[#5b3cf0] px-4 py-2.5 text-[11px] font-bold text-white shadow-[0_10px_24px_rgba(99,57,238,0.3)] transition hover:opacity-90"
               >
                 Angebot anfordern
                 <ArrowRight size={13} />
@@ -567,8 +558,10 @@ function HandwerkerResults({
   serviceTitle,
   cityDisplay,
   data,
+  handyman,
 }: {
   serviceTitle: string;
+  handyman: string;
   cityDisplay: string;
   data: SearchPageData;
 }) {
@@ -578,22 +571,22 @@ function HandwerkerResults({
   const cards: CardData[] = hasResults
     ? users.map((u) => mapUserToCard(u))
     : [
-        {
-          name: `${serviceTitle} Müller`,
-          initials: getInitials(serviceTitle),
-          verified: false,
-          place: cityDisplay,
-          zip: String(data.locationData?.[0]?.zip ?? ""),
-          description: SAMPLE_DESCRIPTION,
-          rating: 0,
-          reviewCount: 0,
-          services: serviceTitle
-            .split("&")
-            .map((s) => s.trim())
-            .filter(Boolean),
-          profileHref: "/auftrag-erstellen",
-        },
-      ];
+      {
+        name: `${serviceTitle} Müller`,
+        initials: getInitials(serviceTitle),
+        verified: false,
+        place: cityDisplay,
+        zip: String(data.locationData?.[0]?.zip ?? ""),
+        description: SAMPLE_DESCRIPTION,
+        rating: 0,
+        reviewCount: 0,
+        services: serviceTitle
+          .split("&")
+          .map((s) => s.trim())
+          .filter(Boolean),
+        profileHref: "/auftrag-erstellen",
+      },
+    ];
 
   return (
     <section className="pb-16 pt-14">
@@ -650,7 +643,10 @@ function HandwerkerResults({
           </p>
 
           <Link
-            href="/auftrag-erstellen"
+            href={{
+              pathname: "/auftrag-erstellen",
+              query: { service: handyman },
+            }}
             className="mt-6 inline-flex items-center gap-2 rounded-md bg-[#ff5b1f] px-5 py-3 text-xs font-bold text-white transition hover:bg-[#ed4e20]"
           >
             Kostenlosen Auftrag erstellen
@@ -857,6 +853,7 @@ export function ServicePageBody({
           serviceTitle={serviceTitle}
           cityDisplay={cityDisplay}
           data={data}
+          handyman={handyman}
         />
       )}
 
