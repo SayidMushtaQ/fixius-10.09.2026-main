@@ -34,7 +34,13 @@ const NavLinks = [
     title: "Als Handwerker registrieren",
     url: "/registrieren",
     linkTitle: "Klicke hier, um dich als Handwerker zu registrieren",
-  }
+  }, 
+   {
+    id: 7,
+    title: "Unternehmensverzeichnis",
+    url: "/handwerker-finden",
+    linkTitle: "Klicke hier, um das Unternehmensverzeichnis zu sehen",
+  },
 ];
 
 const ServiceCards = [

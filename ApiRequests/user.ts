@@ -10,7 +10,7 @@ const useUserRequests = () => {
       queryKey: ["getUserData", queryParams._id, queryParams.email], // Unique key based on params
       queryFn: async () => {
         const response = await apiCaller.get(
-          `/user?email=${queryParams.email}&_id=${queryParams._id}`
+          `/user?email=${queryParams.email}&_id=${queryParams._id}`,
         );
         return response.data;
       },
@@ -36,13 +36,13 @@ const useUserRequests = () => {
 
   const GetUsers = (
     { pageSize, role }: { pageSize: number; role: string },
-    filter: any
+    filter: any,
   ) => {
     return useInfiniteQuery({
       queryKey: ["getUsers", role, filter.search],
       queryFn: async ({ pageParam = 1 }) => {
         const response = await apiCaller.get(
-          `/user/getuser?role=${role}&pageSize=${pageSize}&pageNumber=${pageParam}&search=${filter.search}`
+          `/user/getuser?role=${role}&pageSize=${pageSize}&pageNumber=${pageParam}&search=${filter.search}`,
         );
         return response.data;
       },
@@ -59,7 +59,7 @@ const useUserRequests = () => {
       queryKey: ["getCraftsmans"],
       queryFn: async ({ pageParam = 1 }) => {
         const response = await apiCaller.get(
-          `/user/craftman/getcraftsman?pageSize=${pageSize}&pageNumber=${pageParam}&status=${filter.status}`
+          `/user/craftman/getcraftsman?pageSize=${pageSize}&pageNumber=${pageParam}&status=${filter.status}`,
         );
         return response.data;
       },
@@ -110,7 +110,6 @@ const useUserRequests = () => {
       return response.data;
     },
   });
-
   const SearchHandyman = (
     { pageSize }: { pageSize: number },
     filter: {
@@ -119,32 +118,49 @@ const useUserRequests = () => {
       city: string;
       distance?: string;
     },
-    initialResults?: any
+    initialResults?: any,
   ) => {
+    const distance = filter.distance || "50";
+    const shouldSeed = Boolean(initialResults) && !filter.rating;
+
     return useInfiniteQuery({
-      queryKey: ["searchHandyman", filter.service, filter.city, filter.rating],
+      queryKey: [
+        "searchHandyman",
+        filter.service,
+        filter.city,
+        filter.rating ?? "",
+        distance,
+      ],
       queryFn: async ({ pageParam = 1 }) => {
+        const qs = new URLSearchParams({
+          service: filter.service || "",
+          rating: filter.rating || "",
+          city: filter.city,
+          distance,
+          pageSize: String(pageSize),
+          pageNumber: String(pageParam),
+        });
         const response = await apiCaller.get(
-          `/find_handymans/?service=${filter?.service || ""}&rating=${
-            filter?.rating || ""
-          }&city=${filter.city}&distance=${
-            filter?.distance
-          }&pageSize=${pageSize}&pageNumber=${pageParam}`
+          `/find_handymans/?${qs.toString()}`,
         );
         return response.data;
       },
       initialPageParam: 1,
-      getNextPageParam: (lastPage, allPage) => {
-        const nextPage = lastPage.currentPage + 1;
-        return nextPage <= lastPage.totalPages ? nextPage : undefined;
+      getNextPageParam: (lastPage) => {
+        const current = lastPage?.currentPage ?? 1;
+        const total = lastPage?.totalPages ?? 1;
+        return current < total ? current + 1 : undefined;
       },
-      // Server-rendered first page, seeded so Googlebot (and users) see real
-      // results in the initial HTML instead of a loading spinner.
-      ...(initialResults && !filter.rating
-        ? { initialData: { pages: [initialResults], pageParams: [1] } }
+      // Seed with the server-rendered first page and don't refetch it right away
+      ...(shouldSeed
+        ? {
+            initialData: { pages: [initialResults], pageParams: [1] },
+            staleTime: 60 * 1000,
+          }
         : {}),
     });
   };
+  
   return {
     GetUser,
     GetUsers,

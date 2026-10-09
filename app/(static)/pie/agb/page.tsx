@@ -104,18 +104,26 @@ export default function AgbPage() {
         {/* § 6 */}
         <section className="space-y-3">
           <h2 className="text-xl md:text-2xl font-bold text-secondary font-outfit">
-            6. Laufzeit und Kündigung
+            6. Laufzeit, Änderung der Nutzungsbedingungen und Beendigung
           </h2>
+
           <p className="text-slate-700 leading-relaxed">
-            (1) Der Nutzungsvertrag über die Nutzung der Plattform wird auf unbestimmte Zeit geschlossen.
+            (1) Der Vertrag über die Nutzung des Nutzerkontos wird auf unbestimmte Zeit geschlossen. Die grundlegende Registrierung und Basisfunktionen sind für Handwerker derzeit kostenlos.
           </p>
+
           <p className="text-slate-700 leading-relaxed">
-            (2) Beide Parteien können den Nutzungsvertrag jederzeit ohne Angabe von Gründen mit einer Frist von 14 Tagen in Textform kündigen.
+            (2) Sollte Fixius künftig kostenpflichtige Zusatzfunktionen oder allgemeine Nutzungsgebühren einführen, wird der Nutzer hierüber mindestens 30 Tage vor Inkrafttreten per E-Mail informiert. Der Nutzer hat in diesem Fall das Recht, den Vertrag zum Zeitpunkt des Inkrafttretens der Änderung fristlos zu kündigen bzw. sein Konto zu löschen. Nutzt er das Konto nach Inkrafttreten der Änderung weiter, gelten die neuen Konditionen.
           </p>
+
           <p className="text-slate-700 leading-relaxed">
-            (3) Das Recht zur außerordentlichen Kündigung aus wichtigem Grund (z. B. bei schweren AGB-Verstößen oder illegalen Handlungen) bleibt unberührt.
+            (3) Der Nutzer kann sein Konto jederzeit ohne Einhaltung von Fristen selbst löschen oder per E-Mail an info@fixius.de veranlassen.
+          </p>
+
+          <p className="text-slate-700 leading-relaxed">
+            (4) Das Recht von Fixius zur Sperrung oder Löschung eines Kontos bei Verstößen gegen diese AGB bleibt unberührt.
           </p>
         </section>
+  
 
         {/* § 7 */}
         <section className="space-y-3">
